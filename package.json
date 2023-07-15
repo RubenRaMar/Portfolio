@@ -1,0 +1,45 @@
+{
+  "name": "pink-photon",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "prepare": "husky install",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:dev": "vitest",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "@fontsource/lexend": "^5.0.3",
+    "@types/node": "^20.3.2",
+    "astro": "^2.7.0",
+    "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/user-event": "^14.4.3",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "@vitest/coverage-c8": "^0.32.4",
+    "astro-eslint-parser": "^0.14.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-xo": "^0.43.1",
+    "eslint-config-xo-typescript": "^0.57.0",
+    "eslint-plugin-astro": "^0.27.2",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "husky": "^8.0.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "2.8.8",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.1.3",
+    "vitest": "^0.32.2"
+  }
+}
