@@ -1,0 +1,141 @@
+@use "../variables/colors";
+@use "../variables/font-size";
+@use "../variables/typography";
+@use "../functions/functions";
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: colors.$gray-999;
+  color: colors.$gray-200;
+  font-family: typography.$font-body;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: colors.$link-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.1;
+  font-family: typography.$font-brand;
+  font-weight: 600;
+  color: colors.$gray-100;
+}
+
+h1 {
+  font-size: font-size.$text-5xl;
+}
+
+h2 {
+  font-size: font-size.$text-4xl;
+}
+
+h3 {
+  font-size: font-size.$text-3xl;
+}
+
+h4 {
+  font-size: font-size.$text-2xl;
+}
+
+h5 {
+  font-size: font-size.$text-xl;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1328px;
+  margin-inline: auto;
+  padding-inline: functions.pixelsToRem(24);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-2 {
+  gap: functions.pixelsToRem(8);
+}
+.gap-4 {
+  gap: functions.pixelsToRem(16);
+}
+.gap-8 {
+  gap: functions.pixelsToRem(32);
+}
+.gap-10 {
+  gap: functions.pixelsToRem(40);
+}
+.gap-15 {
+  gap: functions.pixelsToRem(60);
+}
+.gap-20 {
+  gap: functions.pixelsToRem(80);
+}
+.gap-30 {
+  gap: functions.pixelsToRem(120);
+}
+.gap-48 {
+  gap: functions.pixelsToRem(192);
+}
+
+@media (min-width: 800px) {
+  .lg\:gap-2 {
+    gap: functions.pixelsToRem(8);
+  }
+  .lg\:gap-4 {
+    gap: functions.pixelsToRem(16);
+  }
+  .lg\:gap-8 {
+    gap: functions.pixelsToRem(32);
+  }
+  .lg\:gap-10 {
+    gap: functions.pixelsToRem(40);
+  }
+  .lg\:gap-15 {
+    gap: functions.pixelsToRem(60);
+  }
+  .lg\:gap-20 {
+    gap: functions.pixelsToRem(80);
+  }
+  .lg\:gap-30 {
+    gap: functions.pixelsToRem(120);
+  }
+  .lg\:gap-48 {
+    gap: functions.pixelsToRem(192);
+  }
+}
