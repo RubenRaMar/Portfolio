@@ -1,0 +1,14 @@
+@use "../functions/functions";
+
+$text-sm: functions.pixelsToRem(14);
+$text-base: functions.pixelsToRem(16);
+$text-md: functions.pixelsToRem(18);
+$text-lg: functions.pixelsToRem(20);
+$text-xl: functions.pixelsToRem(26);
+$text-2xl: functions.pixelsToRem(34);
+$text-3xl: functions.pixelsToRem(42);
+$text-4xl: functions.pixelsToRem(56);
+$text-5xl: functions.pixelsToRem(72);
+
+$icon-size: $text-xl;
+$icon-padding: functions.pixelsToRem(8);
