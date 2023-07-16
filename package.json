@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@fontsource/lexend": "^5.0.3",
+    "@testing-library/react": "^14.0.0",
     "@types/node": "^20.3.2",
     "astro": "^2.7.0",
     "sass": "^1.63.6"
@@ -34,6 +35,9 @@
     "eslint-config-xo-typescript": "^0.57.0",
     "eslint-plugin-astro": "^0.27.2",
     "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.0",
     "jest-environment-jsdom": "^29.5.0",
     "lint-staged": "^13.2.2",

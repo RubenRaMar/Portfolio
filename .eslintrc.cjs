@@ -8,6 +8,8 @@ module.exports = {
     "prettier",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:astro/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
   ],
   overrides: [
@@ -17,6 +19,16 @@ module.exports = {
       rules: {
         "naming-convention": "off",
       },
+    },
+    {
+      files: ["*.astro"],
+      parser: "astro-eslint-parser",
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+        extraFileExtensions: [".astro"],
+      },
+      plugins: ["astro"],
+      extends: ["plugin:astro/recommended"],
     },
   ],
   ignorePatterns: ["/*.js", "/*.cjs"],
