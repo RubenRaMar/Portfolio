@@ -1,6 +1,6 @@
 import type { ThemeOptionsStructure } from "./types";
 
-export const themeOptions: ThemeOptionsStructure = {
+const themeOptions: ThemeOptionsStructure = {
   dark: "dark",
   light: "light",
   theme: "theme",
@@ -8,3 +8,5 @@ export const themeOptions: ThemeOptionsStructure = {
   darkButton: "Dark theme",
   lightButton: "Light theme",
 };
+
+export default themeOptions;

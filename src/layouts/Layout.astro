@@ -1,21 +1,14 @@
 ---
-const {
-  title = "Rubén Ramírez: Personal Site",
-  description = "The personal site of Rubén Ramírez",
-} = Astro.props;
+import MainHead from "../components/MainHead/MainHead.astro";
+
+const { title, description } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-  </head>
-  <body>
+    <MainHead title={title} description={description} />
+  </head><body>
     <slot />
   </body>
 </html>

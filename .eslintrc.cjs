@@ -21,14 +21,14 @@ module.exports = {
       },
     },
     {
+      extends: ["plugin:astro/recommended"],
+      plugins: ["astro"],
       files: ["*.astro"],
       parser: "astro-eslint-parser",
       parserOptions: {
         parser: "@typescript-eslint/parser",
         extraFileExtensions: [".astro"],
       },
-      plugins: ["astro"],
-      extends: ["plugin:astro/recommended"],
     },
   ],
   ignorePatterns: ["/*.js", "/*.cjs"],
