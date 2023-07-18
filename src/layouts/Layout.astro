@@ -1,14 +1,27 @@
 ---
 import MainHead from "../components/MainHead/MainHead.astro";
+import personalData from "../utils/content/personalData/personalData";
 
-const { title, description } = Astro.props;
+const { name, firstSurname, secondSurname } = personalData;
+
+const {
+  title = `${name} ${firstSurname}: Personal Site`,
+  description = `The personal site ${name} ${firstSurname} ${secondSurname}`,
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <MainHead title={title} description={description} />
-  </head><body>
+  </head>
+  <body>
+    <div class="container-column backgrounds"></div>
     <slot />
+    <script>
+      addEventListener("load", () =>
+        document.documentElement.classList.add("loaded")
+      );
+    </script>
   </body>
 </html>
