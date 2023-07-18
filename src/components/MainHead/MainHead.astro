@@ -1,0 +1,61 @@
+---
+import { personalData } from "../../utils/content/personalData/personalData";
+
+type Props = {
+  title?: string;
+  description?: string;
+};
+
+const {
+  title = `${personalData.name} ${personalData.firstSurname}: Personal Site`,
+  description = `The personal site ${personalData.name} ${personalData.firstSurname} ${personalData.secondSurname}`,
+} = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+<title>{title}</title>
+
+<script is:inline>
+  const themeOptions = {
+    dark: "dark",
+    light: "light",
+    theme: "theme",
+    applyThemeDark: "theme-dark",
+  };
+  const { dark, light, applyThemeDark, theme } = themeOptions;
+
+  const getThemePreference = () => {
+    const currentTheme = localStorage.getItem(theme);
+
+    if (typeof localStorage !== "undefined" && currentTheme) {
+      return currentTheme;
+    }
+
+    return window.matchMedia(`(prefers-color-scheme: ${dark})`).matches
+      ? dark
+      : light;
+  };
+
+  const isThemePreferenceDark = getThemePreference() === dark;
+  const classListMethod = isThemePreferenceDark ? "add" : "remove";
+
+  if (typeof localStorage !== "undefined") {
+    const obseverDocumentElement = new MutationObserver(() => {
+      const isDarkClass =
+        document.documentElement.classList.contains(applyThemeDark);
+
+      localStorage.setItem(theme, isDarkClass ? dark : light);
+    });
+
+    obseverDocumentElement.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  }
+
+  document.documentElement.classList[classListMethod](applyThemeDark);
+</script>

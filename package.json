@@ -9,13 +9,12 @@
     "astro": "astro",
     "prepare": "husky install",
     "test": "vitest run",
-    "test:coverage": "vitest run --coverage",
+    "test:coverage": "vitest run --coverage --passWithNoTests",
     "test:dev": "vitest",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
     "@fontsource/lexend": "^5.0.3",
-    "@testing-library/react": "^14.0.0",
     "@types/node": "^20.3.2",
     "astro": "^2.7.0",
     "sass": "^1.63.6"
@@ -24,6 +23,7 @@
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
     "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
