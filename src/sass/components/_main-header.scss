@@ -39,3 +39,25 @@
   background: radial-gradient(colors.$gray-900, colors.$gray-800 150%);
   box-shadow: shadows.$shadow-md;
 }
+
+.menu-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -365px;
+  transition: all 0.7s ease-in-out;
+}
+
+.menu-content--expanded {
+  top: 0px;
+}
+
+.menu-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1.5rem 2rem 1.5rem 1.5rem;
+  background-color: colors.$gray-999;
+  border-radius: 0 0 0.75rem 0.75rem;
+  box-shadow: shadows.$shadow-md;
+}

@@ -1,0 +1,37 @@
+@use "../variables/font-size";
+@use "../variables/colors";
+@use "../variables/animations";
+
+.social-media {
+  display: flex;
+  gap: 0.625rem;
+  font-size: font-size.$icon-size;
+
+  &__link {
+    display: flex;
+  }
+}
+
+.link {
+  &__icon {
+    display: flex;
+    padding-inline: font-size.$icon-padding + 0.4rem;
+    text-decoration: none;
+    color: colors.$accent-dark;
+    transition: color animations.$theme-transition;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    color: colors.$accent-text-over;
+  }
+}
+
+html:not(.theme-dark) {
+  .link {
+    &__icon:hover,
+    &__icon:focus {
+      color: colors.$accent-light;
+    }
+  }
+}
