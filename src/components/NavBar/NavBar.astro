@@ -1,0 +1,36 @@
+---
+import type { NavBarLinksStructure } from "../../utils/content/types";
+
+type Props = {
+  navBarLinks: NavBarLinksStructure[];
+};
+
+const { navBarLinks } = Astro.props;
+---
+
+<nav>
+  <article>
+    <ul class="nav-list">
+      {
+        navBarLinks.map(({ label, href }) => (
+          <li class="nav-list__item">
+            <a
+              aria-current={Astro.url.pathname === href}
+              class:list={[
+                "item__link",
+                {
+                  "item__link--active":
+                    Astro.url.pathname === href ||
+                    (href !== "/" && Astro.url.pathname.startsWith(href)),
+                },
+              ]}
+              href={href}
+            >
+              {label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </article>
+</nav>

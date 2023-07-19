@@ -1,6 +1,7 @@
 ---
 import MainHead from "../components/MainHead/MainHead.astro";
 import MainHeader from "../components/MainHeader/MainHeader.astro";
+import navBarLinks from "../utils/content/navBarLinks/navBarLinks";
 import personalData from "../utils/content/personalData/personalData";
 
 const { name, firstSurname, secondSurname } = personalData;
@@ -18,7 +19,10 @@ const {
   </head>
   <body>
     <div class="container-column backgrounds">
-      <MainHeader personalName={`${name} ${firstSurname}`} />
+      <MainHeader
+        personalName={`${name} ${firstSurname}`}
+        navBarLinks={navBarLinks}
+      />
     </div>
     <slot />
     <script>
