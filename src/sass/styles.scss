@@ -1,13 +1,14 @@
+@use "components/icon";
 @use "components/layout";
 @use "components/mainHeader";
 @use "core/global";
 @use "core/reset";
-@use "variables/root";
+@use "functions/functions";
 @use "variables/animations";
 @use "variables/background";
 @use "variables/colors";
 @use "variables/font-size";
 @use "variables/gradients";
+@use "variables/root";
 @use "variables/shadows";
 @use "variables/typography";
-@use "functions/functions";
