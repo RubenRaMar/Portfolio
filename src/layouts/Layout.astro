@@ -3,6 +3,7 @@ import MainHead from "../components/MainHead/MainHead.astro";
 import MainHeader from "../components/MainHeader/MainHeader.astro";
 import navBarLinks from "../utils/content/navBarLinks/navBarLinks";
 import personalData from "../utils/content/personalData/personalData";
+import socialsMedias from "../utils/content/socialMedia/socialMedia";
 
 const { name, firstSurname, secondSurname } = personalData;
 
@@ -22,6 +23,7 @@ const {
       <MainHeader
         personalName={`${name} ${firstSurname}`}
         navBarLinks={navBarLinks}
+        socialsMedias={socialsMedias}
       />
     </div>
     <slot />
