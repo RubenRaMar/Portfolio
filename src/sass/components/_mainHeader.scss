@@ -1,0 +1,38 @@
+@use "../variables/typography";
+@use "../variables/colors";
+@use "../variables/shadows";
+@use "../functions/functions";
+
+.main-header {
+  position: relative;
+  font-family: typography.$font-brand;
+  font-weight: 500;
+  margin-bottom: 56px;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.1;
+  color: colors.$gray-0;
+}
+
+.menu-button {
+  position: relative;
+  display: flex;
+  border: 0;
+  border-radius: 50%;
+  padding: functions.pixelsToRem(8);
+  font-size: functions.pixelsToRem(24);
+  color: colors.$gray-300;
+  background: radial-gradient(colors.$gray-900, colors.$gray-800 150%);
+  box-shadow: shadows.$shadow-md;
+}

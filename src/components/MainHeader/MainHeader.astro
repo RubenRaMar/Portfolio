@@ -1,0 +1,16 @@
+---
+type Props = {
+  personalName: string;
+};
+
+const { personalName } = Astro.props;
+---
+
+<header class="main-header">
+  <section class="menu-header">
+    <a href="/" class="site-title">
+      {personalName}
+    </a>
+    <button class="menu-button" aria-expanded="false"></button>
+  </section>
+</header>

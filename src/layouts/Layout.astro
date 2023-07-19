@@ -1,5 +1,6 @@
 ---
 import MainHead from "../components/MainHead/MainHead.astro";
+import MainHeader from "../components/MainHeader/MainHeader.astro";
 import personalData from "../utils/content/personalData/personalData";
 
 const { name, firstSurname, secondSurname } = personalData;
@@ -16,7 +17,9 @@ const {
     <MainHead title={title} description={description} />
   </head>
   <body>
-    <div class="container-column backgrounds"></div>
+    <div class="container-column backgrounds">
+      <MainHeader personalName={`${name} ${firstSurname}`} />
+    </div>
     <slot />
     <script>
       addEventListener("load", () =>

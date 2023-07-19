@@ -1,15 +1,10 @@
 ---
-import { personalData } from "../../utils/content/personalData/personalData";
-
 type Props = {
   title?: string;
   description?: string;
 };
 
-const {
-  title = `${personalData.name} ${personalData.firstSurname}: Personal Site`,
-  description = `The personal site ${personalData.name} ${personalData.firstSurname} ${personalData.secondSurname}`,
-} = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <meta charset="UTF-8" />
