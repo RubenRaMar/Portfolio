@@ -1,0 +1,43 @@
+@use "../variables/font-size";
+@use "../variables/colors";
+@use "../variables/shadows";
+@use "../variables/gradients";
+@use "../variables/animations";
+@use "../functions/functions";
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 376px;
+  gap: 18px;
+  font-size: 1.125rem;
+  padding: 24px;
+  padding-top: 100px;
+  background-color: colors.$gray-999_73;
+  border-bottom: 1px solid colors.$accent-subtle-overlay;
+  transition: all 0.4s;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.nav-list--expanded {
+  display: flex;
+  bottom: 90px;
+}
+
+.item {
+  &__link {
+    position: relative;
+    color: colors.$gray-300;
+  }
+
+  &__link--active {
+    color: colors.$gray-0;
+  }
+}
