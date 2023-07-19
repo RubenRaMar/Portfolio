@@ -1,0 +1,28 @@
+---
+import Icon from "../Icon/Icon.astro";
+import type { SocialMediaStructure } from "../../utils/content/types";
+
+type Props = {
+  socialsMedias: SocialMediaStructure[];
+};
+
+const { socialsMedias } = Astro.props;
+---
+
+<ul class="social-media">
+  <li class="social-media__link">
+    {
+      socialsMedias.map(({ href, icon, label }) => (
+        <a
+          href={href}
+          target="_blank"
+          aria-label={label}
+          rel="noreferrer"
+          class="link__icon"
+        >
+          <Icon icon={icon} />
+        </a>
+      ))
+    }
+  </li>
+</ul>

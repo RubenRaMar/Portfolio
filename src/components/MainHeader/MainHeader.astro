@@ -1,14 +1,19 @@
 ---
 import Icon from "../Icon/Icon.astro";
 import NavBar from "../NavBar/NavBar.astro";
-import type { NavBarLinksStructure } from "../../utils/content/types";
+import SocialMedia from "../SocialMedia/SocialMedia.astro";
+import type {
+  NavBarLinksStructure,
+  SocialMediaStructure,
+} from "../../utils/content/types";
 
 type Props = {
   personalName: string;
   navBarLinks: NavBarLinksStructure[];
+  socialsMedias: SocialMediaStructure[];
 };
 
-const { personalName, navBarLinks } = Astro.props;
+const { personalName, navBarLinks, socialsMedias } = Astro.props;
 ---
 
 <header class="main-header">
@@ -23,15 +28,18 @@ const { personalName, navBarLinks } = Astro.props;
   </section>
   <section class="menu-content">
     <NavBar navBarLinks={navBarLinks} />
+    <article class="menu-footer">
+      <SocialMedia socialsMedias={socialsMedias} />
+    </article>
   </section>
 </header>
 
 <script>
   const btn = document.querySelector(".menu-button");
 
-  const menu = document.querySelector(".nav-list");
+  const menuContent = document.querySelector(".menu-content");
 
   btn?.addEventListener("click", () => {
-    menu?.classList.toggle("nav-list--expanded");
+    menuContent?.classList.toggle("menu-content--expanded");
   });
 </script>
