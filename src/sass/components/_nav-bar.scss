@@ -8,10 +8,10 @@
 .nav-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  font-size: 1.125rem;
-  padding: 24px;
-  padding-top: 100px;
+  gap: 20px;
+  font-size: functions.pixelsToRem(18);
+  padding: 30px 24px;
+  padding-top: 90px;
   background: linear-gradient(colors.$gray-999_73, colors.$gray-999);
   border-bottom: 1px solid colors.$accent-subtle-overlay;
   transition: all 0.4s;

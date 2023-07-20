@@ -1,0 +1,67 @@
+@use "../variables/colors";
+@use "../variables/font-size";
+@use "../variables/animations";
+@use "../functions/functions";
+
+.theme-toggle-container {
+  display: flex;
+  align-items: center;
+  height: calc(font-size.$icon-size + 2 * font-size.$icon-padding);
+}
+
+.theme-toggle {
+  display: flex;
+  border: 0;
+  border-radius: 36px;
+  padding: 2px;
+  background-color: colors.$gray-999;
+  box-shadow: inset 0 0 0 1px colors.$accent-overlay;
+
+  &__icon {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    font-size: functions.pixelsToRem(16);
+    color: colors.$accent-overlay;
+  }
+
+  &__icon.light::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background-color: colors.$accent-regular;
+    border-radius: functions.pixelsToRem(16);
+  }
+
+  &__icon--theme-dark.light::before {
+    transform: translateX(100%);
+  }
+
+  &__icon--theme-dark.dark,
+  &__icon:not(&__icon--theme-dark).light,
+  .theme-toggle[aria-pressed="false"] &__icon.light {
+    color: colors.$accent-text-over;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .theme-toggle {
+    &__icon,
+    &__icon.light::before {
+      transition: transform animations.$theme-transition,
+        color animations.$theme-transition;
+    }
+  }
+}
+
+@media (forced-colors: active) {
+  .theme-toggle {
+    &__icon.light::before {
+      background-color: SelectedItem;
+    }
+  }
+}
