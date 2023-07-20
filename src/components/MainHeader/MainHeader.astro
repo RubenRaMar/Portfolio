@@ -36,11 +36,12 @@ const { personalName, navBarLinks, socialsMedias } = Astro.props;
   </section>
 </header>
 <script>
-  const btn = document.querySelector(".menu-button");
-
+  const menuButton = document.querySelector(".menu-button");
   const menuContent = document.querySelector(".menu-content");
 
-  btn?.addEventListener("click", () => {
-    menuContent?.classList.toggle("menu-content--expanded");
+  menuButton?.addEventListener("click", () => {
+    const isExpanded = menuContent?.classList.toggle("menu-content--expanded");
+
+    menuButton.ariaExpanded = `${isExpanded}`;
   });
 </script>
