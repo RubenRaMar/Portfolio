@@ -1,0 +1,31 @@
+---
+import themeOptions from "../../utils/themeOptions/themeOptions";
+import Icon from "../Icon/Icon.astro";
+
+const { lightButton, darkButton, applyThemeDark, dark } = themeOptions;
+
+const isDark = localStorage.getItem("theme") === dark;
+---
+
+<div class="theme-toggle-container">
+  <button
+    class="theme-toggle"
+    aria-pressed={isDark}
+    aria-label={`${isDark ? darkButton : lightButton}`}
+  >
+    <span
+      class={`theme-toggle__icon ${
+        isDark ? `theme-toggle__icon--${applyThemeDark}` : ""
+      } light`}
+    >
+      <Icon icon="sun" />
+    </span>
+    <span
+      class={`theme-toggle__icon ${
+        isDark ? `theme-toggle__icon--${applyThemeDark}` : ""
+      } dark`}
+    >
+      <Icon icon="moon-stars" />
+    </span>
+  </button>
+</div>

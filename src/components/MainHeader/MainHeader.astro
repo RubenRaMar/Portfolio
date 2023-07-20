@@ -2,6 +2,7 @@
 import Icon from "../Icon/Icon.astro";
 import NavBar from "../NavBar/NavBar.astro";
 import SocialMedia from "../SocialMedia/SocialMedia.astro";
+import ThemeToggle from "../ThemeToggle/ThemeToggle.astro";
 import type {
   NavBarLinksStructure,
   SocialMediaStructure,
@@ -30,10 +31,10 @@ const { personalName, navBarLinks, socialsMedias } = Astro.props;
     <NavBar navBarLinks={navBarLinks} />
     <article class="menu-footer">
       <SocialMedia socialsMedias={socialsMedias} />
+      <ThemeToggle />
     </article>
   </section>
 </header>
-
 <script>
   const btn = document.querySelector(".menu-button");
 
