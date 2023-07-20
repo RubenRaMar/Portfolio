@@ -10,9 +10,9 @@ const { socialsMedias } = Astro.props;
 ---
 
 <ul class="social-media">
-  <li class="social-media__link">
-    {
-      socialsMedias.map(({ href, icon, label }) => (
+  {
+    socialsMedias.map(({ href, icon, label }) => (
+      <li class="social-media__link">
         <a
           href={href}
           target="_blank"
@@ -22,7 +22,7 @@ const { socialsMedias } = Astro.props;
         >
           <Icon icon={icon} />
         </a>
-      ))
-    }
-  </li>
+      </li>
+    ))
+  }
 </ul>

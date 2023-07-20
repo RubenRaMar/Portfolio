@@ -2,6 +2,7 @@
 import Icon from "../Icon/Icon.astro";
 import NavBar from "../NavBar/NavBar.astro";
 import SocialMedia from "../SocialMedia/SocialMedia.astro";
+import ThemeToggle from "../ThemeToggle/ThemeToggle.astro";
 import type {
   NavBarLinksStructure,
   SocialMediaStructure,
@@ -30,16 +31,17 @@ const { personalName, navBarLinks, socialsMedias } = Astro.props;
     <NavBar navBarLinks={navBarLinks} />
     <article class="menu-footer">
       <SocialMedia socialsMedias={socialsMedias} />
+      <ThemeToggle />
     </article>
   </section>
 </header>
-
 <script>
-  const btn = document.querySelector(".menu-button");
-
+  const menuButton = document.querySelector(".menu-button");
   const menuContent = document.querySelector(".menu-content");
 
-  btn?.addEventListener("click", () => {
-    menuContent?.classList.toggle("menu-content--expanded");
+  menuButton?.addEventListener("click", () => {
+    const isExpanded = menuContent?.classList.toggle("menu-content--expanded");
+
+    menuButton.ariaExpanded = `${isExpanded}`;
   });
 </script>
