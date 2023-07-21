@@ -1,5 +1,8 @@
 @use "../variables/typography";
+@use "../variables/animations";
 @use "../variables/colors";
+@use "../variables/font-size";
+@use "../variables/gradients";
 @use "../variables/shadows";
 @use "../functions/functions";
 
@@ -45,7 +48,6 @@
   left: 0;
   right: 0;
   top: -380px;
-  transition: all 0.7s ease-in-out;
 }
 
 .menu-content--expanded {
@@ -61,4 +63,46 @@
   background-color: colors.$gray-999;
   border-radius: 0 0 12px 12px;
   box-shadow: shadows.$shadow-md;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .menu-content {
+    transition: all animations.$menu-transition;
+  }
+}
+
+@media (min-width: 800px) {
+  .menu-button {
+    position: relative;
+    display: none;
+  }
+
+  .main-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 40px;
+    gap: 16px;
+  }
+
+  .menu-header {
+    padding: 0;
+    gap: 0;
+  }
+
+  .site-title {
+    font-size: font-size.$text-lg;
+  }
+
+  .menu-content {
+    display: contents;
+  }
+
+  .menu-footer {
+    justify-self: flex-end;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
 }

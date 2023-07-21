@@ -37,11 +37,23 @@ const { personalName, navBarLinks, socialsMedias } = Astro.props;
 </header>
 <script>
   const menuButton = document.querySelector(".menu-button");
-  const menuContent = document.querySelector(".menu-content");
+  const mediaQueries = window.matchMedia("(min-width: 800px)");
 
-  menuButton?.addEventListener("click", () => {
-    const isExpanded = menuContent?.classList.toggle("menu-content--expanded");
+  const toggleExpandMenu = (event: Event) => {
+    const menuContent = document.querySelector(".menu-content");
+    const classExpanded = "menu-content--expanded";
 
-    menuButton.ariaExpanded = `${isExpanded}`;
-  });
+    const isExpanded =
+      event.type === "click"
+        ? menuContent?.classList.toggle(classExpanded)
+        : menuContent?.classList.remove(classExpanded);
+
+    if (menuButton) {
+      menuButton.ariaExpanded =
+        event.type === "click" ? String(isExpanded) : "false";
+    }
+  };
+
+  menuButton?.addEventListener("click", toggleExpandMenu);
+  mediaQueries.addEventListener("change", toggleExpandMenu);
 </script>
