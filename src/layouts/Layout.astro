@@ -1,6 +1,7 @@
 ---
 import MainHead from "../components/MainHead/MainHead.astro";
 import MainHeader from "../components/MainHeader/MainHeader.astro";
+import Footer from "../components/Footer/Footer.astro";
 import navBarLinks from "../utils/content/navBarLinks/navBarLinks";
 import personalData from "../utils/content/personalData/personalData";
 import socialsMedias from "../utils/content/socialMedia/socialMedia";
@@ -25,8 +26,9 @@ const {
         navBarLinks={navBarLinks}
         socialsMedias={socialsMedias}
       />
+      <slot />
+      <Footer />
     </div>
-    <slot />
     <script>
       addEventListener("load", () =>
         document.documentElement.classList.add("loaded")
