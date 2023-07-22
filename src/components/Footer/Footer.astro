@@ -1,0 +1,27 @@
+---
+import socialMedia from "../../utils/content/socialMedia/socialMedia";
+import personalData from "../../utils/content/personalData/personalData";
+
+const currentYear = new Date().getFullYear();
+const { name, firstSurname } = personalData;
+---
+
+<footer class="footer">
+  <section class="footer__socials">
+    <ul class="socials__list">
+      {
+        socialMedia.map(({ label, href }) => (
+          <li>
+            <a class="link" href={href}>
+              {label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+  <section class="footer__copyright">
+    <span class="copyright__year">&copy; {currentYear}</span>
+    <span class="copyright__name">{name} {firstSurname}</span>
+  </section>
+</footer>
