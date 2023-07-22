@@ -16,8 +16,6 @@ import Icon from "../Icon/Icon.astro";
   import themeOptions from "../../utils/themeOptions/themeOptions";
 
   const { lightButton, darkButton, applyThemeDark } = themeOptions;
-
-  const themeToggleIcons = document.querySelectorAll(".theme-toggle__icon");
   const themeToggleButton = document.querySelector(".theme-toggle");
 
   const setTheme = (isDark: boolean) => {
@@ -29,12 +27,6 @@ import Icon from "../Icon/Icon.astro";
     themeToggleButton?.setAttribute(
       "aria-label",
       isDark ? darkButton : lightButton
-    );
-
-    themeToggleIcons.forEach((themeToggleIcon) =>
-      themeToggleIcon.classList[classListMethod](
-        `theme-toggle__icon--${applyThemeDark}`
-      )
     );
   };
 

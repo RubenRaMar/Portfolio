@@ -19,17 +19,13 @@
     transition: color animations.$theme-transition;
   }
 
-  &__icon:hover,
-  &__icon:focus {
+  &__icon:hover {
     color: colors.$accent-text-over;
   }
 }
 
-html:not(.theme-dark) {
-  .link {
-    &__icon:hover,
-    &__icon:focus {
-      color: colors.$accent-light;
-    }
+@media (min-width: 800px) and (max-width: 900px) {
+  .social-media {
+    display: none;
   }
 }

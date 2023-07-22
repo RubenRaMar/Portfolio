@@ -43,6 +43,12 @@
   box-shadow: shadows.$shadow-md;
 }
 
+.menu-button[aria-expanded="true"] {
+  color: var(--gray-0);
+  background: linear-gradient(180deg, var(--gray-600), transparent),
+    radial-gradient(var(--gray-900), var(--gray-800) 150%);
+}
+
 .menu-content {
   position: absolute;
   left: 0;
@@ -104,5 +110,11 @@
     padding: 0;
     background-color: transparent;
     box-shadow: none;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+  .site-title {
+    font-size: font-size.$text-sm;
   }
 }
