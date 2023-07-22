@@ -37,12 +37,12 @@
     border-radius: functions.pixelsToRem(16);
   }
 
-  &__icon--theme-dark.light::before {
+  html.theme-dark &__icon.light::before {
     transform: translateX(100%);
   }
 
-  &__icon--theme-dark.dark,
-  &__icon:not(&__icon--theme-dark).light,
+  html.theme-dark &__icon.dark,
+  html:not(.theme-dark) &__icon.light,
   .theme-toggle[aria-pressed="false"] &__icon.light {
     color: colors.$accent-text-over;
   }
