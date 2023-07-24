@@ -2,6 +2,35 @@
 import "@fontsource/lexend";
 import "../sass/styles.scss";
 import Layout from "../layouts/Layout.astro";
+import PageHeader from "../components/PageHeader/PageHeader.astro";
+import Roles from "../components/Roles/Roles.astro";
+import roles from "../utils/content/roles/roles";
+import personalData from "../utils/content/personalData/personalData";
+
+const { name, firstSurname, tagline, profileImage, altProfileImage } =
+  personalData;
 ---
 
-<Layout />
+<Layout>
+  <main class="container-column gap-20 lg:gap-48">
+    <section class="wrapper container-column gap-8 lg:gap-20">
+      <header class="home-header">
+        <PageHeader
+          title="Hello, my name is"
+          titleName={`${name} ${firstSurname}`}
+          align="start"
+          tagline={tagline}
+        >
+          <Roles roles={roles} />
+        </PageHeader>
+
+        <img
+          alt={altProfileImage()}
+          width="480"
+          height="620"
+          src={profileImage}
+        />
+      </header>
+    </section>
+  </main>
+</Layout>
