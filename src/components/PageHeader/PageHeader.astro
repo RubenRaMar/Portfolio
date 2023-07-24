@@ -1,0 +1,21 @@
+---
+type Props = {
+  title: string;
+  titleName: string;
+  align?: "start" | "center";
+  tagline?: string;
+};
+
+const { align = "center", title, titleName, tagline } = Astro.props;
+---
+
+<section class:list={["hero container-column gap-4", align]}>
+  <article class="hero__page-header container-column gap-8">
+    <h1 class="page-header__title">
+      {title}
+      <span class="title__name">{titleName}</span>
+    </h1>
+    <span class="page-header__tagline">{tagline}</span>
+  </article>
+  <slot />
+</section>
