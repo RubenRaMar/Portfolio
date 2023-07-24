@@ -1,7 +1,7 @@
 @use "../variables/colors";
 @use "../variables/background";
 
-.backgrounds {
+.app-container {
   min-height: 100%;
   isolation: isolate;
   background: url("/assets/backgrounds/noise.png") top center/220px repeat,
@@ -16,7 +16,7 @@
 }
 
 @media (forced-colors: active) {
-  .backgrounds {
+  .app-container {
     background: none;
     background-blend-mode: none;
     --bg-gradient-size: none;

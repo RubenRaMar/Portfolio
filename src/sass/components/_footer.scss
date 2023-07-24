@@ -1,3 +1,7 @@
+@use "../variables/colors";
+@use "../variables/font-size";
+@use "../variables/animations";
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -5,9 +9,9 @@
   margin-top: auto;
   padding: 40px;
   text-align: center;
-  color: var(--gray-400);
-  font-size: var(--text-sm);
-  border-top: 1px solid var(--gray-800);
+  color: colors.$gray-400;
+  font-size: font-size.$text-sm;
+  border-top: 1px solid colors.$gray-800;
 
   &__copyright {
     display: flex;
@@ -26,10 +30,10 @@
 }
 
 .link {
-  color: var(--accent-dark);
+  color: colors.$accent-dark;
   text-decoration: 1px solid underline transparent;
-  text-underline-offset: 0.25em;
-  transition: text-decoration-color var(--theme-transition);
+  text-underline-offset: 4px;
+  transition: text-decoration-color animations.$theme-transition;
 }
 
 .link:hover,
