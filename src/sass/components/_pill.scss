@@ -1,0 +1,13 @@
+.pill {
+  display: flex;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  gap: 8px;
+  color: var(--accent-text-over);
+  border: 1px solid var(--accent-regular);
+  background-color: var(--accent-regular);
+  border-radius: 5rem;
+  font-size: 1rem;
+  line-height: 1.35;
+  white-space: nowrap;
+}
