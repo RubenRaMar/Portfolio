@@ -12,8 +12,8 @@
   font-size: functions.pixelsToRem(18);
   padding: 30px 24px;
   padding-top: 90px;
-  background: linear-gradient(colors.$gray-999_73, colors.$gray-999);
-  border-bottom: 1px solid colors.$accent-subtle-overlay;
+  background: linear-gradient(colors.$gray-999_73, colors.$gray-999 48%);
+  border-bottom: 1px solid colors.$accent-dark;
 
   &__item {
     display: flex;

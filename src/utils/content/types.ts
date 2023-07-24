@@ -4,6 +4,9 @@ export type PersonalDataStructure = {
   name: string;
   firstSurname: string;
   secondSurname: string;
+  tagline: string;
+  profileImage: string;
+  altProfileImage: () => string;
 };
 
 export type SocialMediaStructure = {
@@ -15,4 +18,9 @@ export type SocialMediaStructure = {
 export type NavBarLinksStructure = {
   label: string;
   href: string;
+};
+
+export type RolesStructure = {
+  role: string;
+  icon: keyof IconPathsProps;
 };
