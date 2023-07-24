@@ -1,0 +1,22 @@
+---
+import Pill from "../Pill/Pill.astro";
+import Icon from "../Icon/Icon.astro";
+import type { RolesStructure } from "../../utils/content/types";
+
+type Props = {
+  roles: RolesStructure[];
+};
+
+const { roles } = Astro.props;
+---
+
+<section class="roles">
+  {
+    roles.map(({ role, icon }) => (
+      <Pill>
+        <Icon icon={icon} size="1.33em" />
+        {role}
+      </Pill>
+    ))
+  }
+</section>
