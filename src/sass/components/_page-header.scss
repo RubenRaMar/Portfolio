@@ -1,0 +1,52 @@
+@use "../variables/font-size";
+@use "../variables/colors";
+@use "../variables/gradients";
+
+.hero {
+  font-size: font-size.$text-lg;
+  text-align: center;
+}
+
+.page-header {
+  &__title,
+  &__tagline {
+    max-width: 37ch;
+    margin-inline: auto;
+  }
+
+  &__title {
+    font-size: font-size.$text-3xl;
+    color: colors.$gray-0;
+  }
+}
+
+.title {
+  &__name {
+    color: colors.$accent-dark;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero {
+    font-size: font-size.$text-xl;
+  }
+
+  .start {
+    text-align: start;
+  }
+
+  .page-header {
+    text-align: start;
+
+    &__title,
+    &__tagline {
+      margin-inline: unset;
+    }
+
+    &__title {
+      font-size: font-size.$text-5xl;
+    }
+  }
+}
