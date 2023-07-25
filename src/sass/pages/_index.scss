@@ -37,8 +37,7 @@
   }
 
   .home-header img {
-    aspect-ratio: 3 / 4;
-    border-radius: 72px;
-    object-fit: cover;
+    aspect-ratio: 3/4;
+    max-width: 360px;
   }
 }
