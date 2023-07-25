@@ -1,16 +1,16 @@
-import type { RolesStructure } from "../types";
+import type { CompetenciesStructure } from "../types";
 
-const roles: RolesStructure[] = [
+const roles: CompetenciesStructure[] = [
   {
-    role: "Developer",
+    competency: "Developer",
     icon: "code",
   },
   {
-    role: "Team Player",
+    competency: "Team Player",
     icon: "microsoft-teams-logo",
   },
   {
-    role: "Problem-Solver",
+    competency: "Problem-Solver",
     icon: "bug",
   },
 ];

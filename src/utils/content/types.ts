@@ -1,4 +1,4 @@
-import type { IconPathsProps } from "../icons/IconPaths";
+import type { IconPathsProps } from "../icons/types";
 
 export type PersonalDataStructure = {
   name: string;
@@ -20,7 +20,8 @@ export type NavBarLinksStructure = {
   href: string;
 };
 
-export type RolesStructure = {
-  role: string;
+export type CompetenciesStructure = {
+  competency: string;
   icon: keyof IconPathsProps;
+  description?: string;
 };

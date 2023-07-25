@@ -6,6 +6,7 @@ import PageHeader from "../components/PageHeader/PageHeader.astro";
 import Roles from "../components/Roles/Roles.astro";
 import roles from "../utils/content/roles/roles";
 import personalData from "../utils/content/personalData/personalData";
+import Skills from "../components/Skills/Skills.astro";
 
 const { name, firstSurname, tagline, profileImage, altProfileImage } =
   personalData;
@@ -31,6 +32,7 @@ const { name, firstSurname, tagline, profileImage, altProfileImage } =
           src={profileImage}
         />
       </header>
+      <Skills />
     </section>
   </main>
 </Layout>
