@@ -1,0 +1,27 @@
+export type IconPathsProps = {
+  "terminal-window": string;
+  "paper-plane-tilt": string;
+  "arrow-right": string;
+  "arrow-left": string;
+  code: string;
+  "microsoft-teams-logo": string;
+  bug: string;
+  "rocket-launch": string;
+  list: string;
+  heart: string;
+  "magnifying-glass": string;
+  "clock-clockwise": string;
+  stack: string;
+  "moon-stars": string;
+  sun: string;
+  "twitter-logo": string;
+  "codepen-logo": string;
+  "github-logo": string;
+  "twitch-logo": string;
+  "youtube-logo": string;
+  "dribbble-logo": string;
+  "discord-logo": string;
+  "linkedin-logo": string;
+  "instagram-logo": string;
+  "tiktok-logo": string;
+};
