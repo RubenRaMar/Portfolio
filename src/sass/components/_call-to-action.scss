@@ -1,0 +1,43 @@
+@use "../variables/animations";
+@use "../variables/colors";
+@use "../variables/font-size";
+@use "../variables/gradients";
+@use "../variables/shadows";
+
+.call-to-action {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: font-size.$text-lg;
+  padding: 9px 32px;
+  gap: 14px;
+  color: colors.$accent-text-over;
+  border-radius: 50px;
+  background: gradients.$gradient-accent-orange;
+  box-shadow: shadows.$shadow-md;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.call-to-action::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transition: background-color animations.$theme-transition;
+  mix-blend-mode: overlay;
+}
+
+.call-to-action:focus::after,
+.call-to-action:hover::after {
+  background-color: hsla(var(--gray-999-basis), 0.3);
+}
+
+@media (min-width: 800px) {
+  .call-to-action {
+    width: fit-content;
+    padding: 15px 40px;
+    font-size: font-size.$text-xl;
+  }
+}
