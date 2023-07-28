@@ -1,13 +1,17 @@
+@use "../functions/functions";
+@use "../variables/font-size";
+@use "../variables/colors";
+
 .pill {
   display: flex;
   width: fit-content;
-  padding: 0.5rem 1rem;
+  padding: functions.pixelsToRem(8) functions.pixelsToRem(16);
   gap: 8px;
-  color: var(--accent-text-over);
-  border: 1px solid var(--accent-regular);
-  background-color: var(--accent-regular);
-  border-radius: 5rem;
-  font-size: 1rem;
+  color: colors.$accent-text-over;
+  border: 1px solid colors.$accent-regular;
+  background-color: colors.$accent-regular;
+  border-radius: functions.pixelsToRem(40);
+  font-size: font-size.$text-base;
   line-height: 1.35;
   white-space: nowrap;
 }
