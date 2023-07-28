@@ -7,6 +7,7 @@ import Roles from "../components/Roles/Roles.astro";
 import roles from "../utils/content/roles/roles";
 import personalData from "../utils/content/personalData/personalData";
 import Skills from "../components/Skills/Skills.astro";
+import ContantMe from "../components/ContantMe/ContantMe.astro";
 
 const { name, firstSurname, tagline, profileImage, altProfileImage } =
   personalData;
@@ -34,5 +35,7 @@ const { name, firstSurname, tagline, profileImage, altProfileImage } =
       </header>
       <Skills />
     </section>
+
+    <ContantMe />
   </main>
 </Layout>
