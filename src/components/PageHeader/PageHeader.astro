@@ -1,7 +1,7 @@
 ---
 type Props = {
   title: string;
-  titleName: string;
+  titleName?: string;
   align?: "start" | "center";
   tagline?: string;
 };
@@ -15,7 +15,7 @@ const { align = "center", title, titleName, tagline } = Astro.props;
       {title}
       <span class="title__name">{titleName}</span>
     </h1>
-    <span class="page-header__tagline">{tagline}</span>
+    {tagline && <p class="page-header__tagline">{tagline}</p>}
   </article>
   <slot />
 </section>

@@ -7,12 +7,14 @@ import Icon from "../Icon/Icon.astro";
   {
     skills.map(({ icon, competency, description }) => (
       <article class="skills-list__skill container-column gap-2 lg:gap-4">
-        <Icon
-          icon={icon}
-          color="var(--accent-regular)"
-          size="2.5rem"
-          gradient
-        />
+        {icon && (
+          <Icon
+            icon={icon}
+            color="var(--accent-regular)"
+            size="2.5em"
+            isGradient
+          />
+        )}
         <h2 class="skill__title">{competency}</h2>
         <p class="skill__description">{description}</p>
       </article>

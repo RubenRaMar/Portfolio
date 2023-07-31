@@ -22,6 +22,16 @@ export type NavBarLinksStructure = {
 
 export type CompetenciesStructure = {
   competency: string;
-  icon: keyof IconPathsProps;
+  icon?: keyof IconPathsProps;
   description?: string;
+};
+
+export type AboutStructure = {
+  title: string;
+  tagline: string;
+  aboutMeList: string[];
+  backgroundList: string[];
+  educationList: string[];
+  softSkills: CompetenciesStructure[];
+  hardSkills: CompetenciesStructure[];
 };

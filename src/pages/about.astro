@@ -1,0 +1,109 @@
+---
+import "@fontsource/lexend";
+import "../sass/styles.scss";
+import Layout from "../layouts/Layout.astro";
+import ContantMe from "../components/ContantMe/ContantMe.astro";
+import PageHeader from "../components/PageHeader/PageHeader.astro";
+import personalData from "../utils/content/personalData/personalData";
+import about from "../utils/content/about/about";
+import Roles from "../components/Roles/Roles.astro";
+
+const { name, firstSurname } = personalData;
+
+const {
+  title,
+  tagline,
+  aboutMeList,
+  backgroundList,
+  educationList,
+  softSkills,
+  hardSkills,
+} = about;
+---
+
+<Layout
+  title={`About | ${name} ${firstSurname}`}
+  description={`About ${name} ${firstSurname}`}
+>
+  <div class="container-column gap-20">
+    <main class="about wrapper">
+      <PageHeader title={title} tagline={tagline}>
+        <img
+          width="1553"
+          height="873"
+          src="/assets/profileImage.webp"
+          alt={`${name} ${firstSurname} at work with a colleague`}
+        />
+      </PageHeader>
+
+      <section class="about-me">
+        <h2 class="about-me__title">About me</h2>
+        <article class="about-me__content">
+          {
+            aboutMeList.map((aboutMe, position) => (
+              <>
+                <p>
+                  <Fragment set:html={aboutMe} />
+                </p>
+                {position !== aboutMeList.length - 1 && <br />}
+              </>
+            ))
+          }
+        </article>
+        <span class="section-divider"></span>
+      </section>
+
+      <section class="background">
+        <h2 class="background__title">Background</h2>
+
+        <article class="background__content">
+          {
+            backgroundList.map((background, position) => (
+              <>
+                <p>
+                  <Fragment set:html={background} />
+                </p>
+                {position !== backgroundList.length - 1 && <br />}
+              </>
+            ))
+          }
+        </article>
+        <span class="section-divider"></span>
+      </section>
+
+      <section class="education">
+        <h2 class="education__title">Education</h2>
+
+        <article class="education__content">
+          {
+            educationList.map((education) => (
+              <p>
+                <Fragment set:html={education} />
+              </p>
+            ))
+          }
+        </article>
+        <span class="section-divider"></span>
+      </section>
+
+      <section class="soft-skills">
+        <h2 class="soft-skills__title">Soft Skills</h2>
+
+        <article class="soft-skills__content">
+          <Roles roles={softSkills} />
+        </article>
+        <span class="section-divider"></span>
+      </section>
+
+      <section class="hard-skills">
+        <h2 class="hard-skills__title">Hard kills</h2>
+
+        <article class="hard-skills__content">
+          <Roles roles={hardSkills} />
+        </article>
+      </section>
+    </main>
+
+    <ContantMe />
+  </div>
+</Layout>../utils/content/aboutMe/about ../utils/content/aboutMe/about
