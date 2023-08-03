@@ -1,6 +1,6 @@
 import type { CompetenciesStructure } from "../types";
 
-const roles: CompetenciesStructure[] = [
+export const roles: CompetenciesStructure[] = [
   {
     competency: "Developer",
     icon: "code",
@@ -14,5 +14,3 @@ const roles: CompetenciesStructure[] = [
     icon: "bug",
   },
 ];
-
-export default roles;

@@ -6,11 +6,11 @@ import type { IconPathsProps } from "../../utils/icons/types";
 type Props = {
   icon: keyof IconPathsProps;
   color?: string;
-  gradient?: boolean;
+  isGradient?: boolean;
   size?: string;
 };
 
-const { color = "currentcolor", icon, gradient, size } = Astro.props;
+const { color = "currentcolor", icon, isGradient, size } = Astro.props;
 const iconPath = iconPaths[icon];
 const sizeAttributes: HTMLAttributes<"svg"> = size
   ? { style: { "--size": size } }
@@ -29,13 +29,13 @@ const gradientId = `icon-gradient-${Math.round(Math.random() * 10e12).toString(
   viewBox="0 0 256 256"
   aria-hidden="true"
   aria-label={`${icon} icon`}
-  stroke={gradient ? `url(#${gradientId})` : color}
-  fill={gradient ? `url(#${gradientId})` : color}
+  stroke={isGradient ? `url(#${gradientId})` : color}
+  fill={isGradient ? `url(#${gradientId})` : color}
   {...sizeAttributes}
 >
   <g set:html={iconPath} />
   {
-    gradient && (
+    isGradient && (
       <linearGradient
         id={gradientId}
         x1="23"

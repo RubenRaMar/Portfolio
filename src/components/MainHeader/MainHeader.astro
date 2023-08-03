@@ -20,7 +20,12 @@ const { personalName, navBarLinks, socialsMedias } = Astro.props;
 <header class="main-header">
   <section class="menu-header">
     <a href="/" class="site-title">
-      <Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" />
+      <Icon
+        icon="terminal-window"
+        color="var(--accent-regular)"
+        isGradient
+        size="1.6em"
+      />
       <span>{personalName}</span>
     </a>
     <button class="menu-button" aria-label="Menu" aria-expanded="false">

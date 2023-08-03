@@ -7,10 +7,9 @@
   width: fit-content;
   padding: functions.pixelsToRem(8) functions.pixelsToRem(16);
   gap: 8px;
-  color: colors.$accent-text-over;
-  border: 1px solid colors.$accent-regular;
-  background-color: colors.$accent-regular;
-  border-radius: functions.pixelsToRem(40);
+  color: colors.$gray-200;
+  border: 3px solid colors.$accent-regular;
+  border-radius: functions.pixelsToRem(8);
   font-size: font-size.$text-base;
   line-height: 1.35;
   white-space: nowrap;

@@ -14,7 +14,7 @@ const { roles } = Astro.props;
   {
     roles.map(({ competency: role, icon }) => (
       <Pill>
-        <Icon icon={icon} size="1.33em" />
+        {icon && <Icon icon={icon} size="1.33em" />}
         {role}
       </Pill>
     ))
