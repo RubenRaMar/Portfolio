@@ -30,6 +30,10 @@ const {
       <Footer />
     </div>
     <script>
+      import AOS from "aos";
+
+      AOS.init();
+
       addEventListener("load", () =>
         document.documentElement.classList.add("loaded")
       );

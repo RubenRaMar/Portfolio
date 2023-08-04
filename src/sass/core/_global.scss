@@ -1,12 +1,12 @@
 @use "../variables/colors";
 @use "../variables/font-size";
 @use "../variables/typography";
+@use "../variables/background";
 @use "../functions/functions";
 
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -140,4 +140,33 @@ h5 {
   .lg\:gap-48 {
     gap: 192px;
   }
+}
+
+.with-background-image {
+  position: relative;
+}
+
+.with-background-image::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  left: 50%;
+  width: 100vw;
+  aspect-ratio: calc(2.25 / background.$bg-scale);
+  top: 0;
+  transform: translateY(-75%) translateX(-50%);
+  background: url("/assets/backgrounds/noise.png") top center/220px repeat,
+    background.$bg-image-subtle-2 center center / background.$bg-gradient-size
+      no-repeat,
+    colors.$gray-999;
+  background-blend-mode: overlay, normal, normal, normal;
+  mix-blend-mode: background.$bg-blend-mode;
+  z-index: -1;
+}
+
+.with-background-image--variant::before {
+  background: url("/assets/backgrounds/noise.png") top center/220px repeat,
+    background.$bg-image-subtle-1 center center / background.$bg-gradient-size
+      no-repeat,
+    colors.$gray-999;
 }

@@ -8,12 +8,16 @@
 .about {
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 56px;
 
   img {
     margin-top: 24px;
     border-radius: 24px;
     box-shadow: shadows.$shadow-md;
+    height: 57vw;
+    object-fit: cover;
+    object-position: top;
+    max-height: 480px;
   }
 
   span,
@@ -25,7 +29,7 @@
   a {
     color: colors.$accent-dark;
     text-decoration: 1px solid underline currentColor;
-    text-underline-offset: 0.25em;
+    text-underline-offset: 4px;
     transition: all animations.$theme-transition;
   }
 
@@ -58,13 +62,14 @@ html:not(.theme-dark) .about {
 .soft-skills {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 24px;
+  font-size: font-size.$text-md;
 
   &__title {
     grid-column-start: 1;
     font-size: font-size.$text-xl;
     color: colors.$gray-0;
-    text-underline-offset: 0.25em;
+    text-underline-offset: 6px;
     text-decoration: 2px solid underline colors.$accent-regular;
   }
 
@@ -89,6 +94,10 @@ html:not(.theme-dark) .about {
       &__page-header {
         align-items: center;
       }
+    }
+
+    img {
+      height: 37vw;
     }
   }
 
