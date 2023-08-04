@@ -29,6 +29,7 @@ const {
     <main class="about wrapper">
       <PageHeader title={title} tagline={tagline}>
         <img
+          data-aos="zoom-in-up"
           width="1553"
           height="873"
           src="/assets/profileImage.webp"
@@ -36,13 +37,15 @@ const {
         />
       </PageHeader>
 
+      <span class="section-divider"></span>
+
       <section class="about-me">
         <h2 class="about-me__title">About me</h2>
-        <article class="about-me__content">
+        <article class="about-me__content with-background-image">
           {
             aboutMeList.map((aboutMe, position) => (
               <>
-                <p>
+                <p data-aos="fade-left">
                   <Fragment set:html={aboutMe} />
                 </p>
                 {position !== aboutMeList.length - 1 && <br />}
@@ -56,11 +59,13 @@ const {
       <section class="background">
         <h2 class="background__title">Background</h2>
 
-        <article class="background__content">
+        <article
+          class="background__content with-background-image with-background-image--variant"
+        >
           {
             backgroundList.map((background, position) => (
               <>
-                <p>
+                <p data-aos="fade-left">
                   <Fragment set:html={background} />
                 </p>
                 {position !== backgroundList.length - 1 && <br />}
@@ -74,10 +79,10 @@ const {
       <section class="education">
         <h2 class="education__title">Education</h2>
 
-        <article class="education__content">
+        <article class="education__content with-background-image">
           {
             educationList.map((education) => (
-              <p>
+              <p data-aos="fade-left">
                 <Fragment set:html={education} />
               </p>
             ))
@@ -106,4 +111,4 @@ const {
 
     <ContantMe />
   </div>
-</Layout>../utils/content/aboutMe/about ../utils/content/aboutMe/about
+</Layout>

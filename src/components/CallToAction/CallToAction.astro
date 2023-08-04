@@ -7,12 +7,13 @@ type Props = {
   size?: string;
   text?: string;
   icon?: keyof IconPathsProps;
+  dataAoa?: "fade-left" | "fade-right";
 };
 
-const { href, icon, size, text } = Astro.props;
+const { href, icon, size, text, dataAoa } = Astro.props;
 ---
 
-<div>
+<div data-aos={dataAoa}>
   <a class="call-to-action" href={href}>
     {text}
     {icon && <Icon icon={icon} size={size} />}
