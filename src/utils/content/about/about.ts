@@ -5,7 +5,7 @@ const about: AboutStructure = {
   tagline:
     "Thanks for stopping by. Read below to learn more about myself and my background.",
   aboutMeList: [
-    `From an early age, my <span>passion for technology</span> led me to explore different ways of expressing my <span>creativity</span>, which led me to create projects on platforms like Twitch and <a href="https://www.youtube.com/channel/UCQp8FVb1lPhVEKlQv273y_Q">YouTube</a>. Although I'm not currently dedicated to it, that experience provided me with <span>valuable communication and creativity skills</span> that are transferable to my career as a developer.`,
+    `From an early age, my <span>passion for technology</span> led me to explore different ways of expressing my <span>creativity</span>, which led me to create projects on platforms like Twitch and <a href="https://www.youtube.com/channel/UCQp8FVb1lPhVEKlQv273y_Q" target="_blank">YouTube</a>. Although I'm not currently dedicated to it, that experience provided me with <span>valuable communication and creativity skills</span> that are transferable to my career as a developer.`,
 
     `It was during this exploration that I discovered <span>programming</span> as a unique opportunity to combine my love for technology with a <span>rewarding career</span>. Realizing that I could turn my passion into my profession brought me deep satisfaction and increased motivation in my daily life.`,
 

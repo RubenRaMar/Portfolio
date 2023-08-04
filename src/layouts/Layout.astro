@@ -1,10 +1,11 @@
 ---
-import MainHead from "../components/MainHead/MainHead.astro";
-import MainHeader from "../components/MainHeader/MainHeader.astro";
-import Footer from "../components/Footer/Footer.astro";
-import navBarLinks from "../utils/content/navBarLinks/navBarLinks";
-import personalData from "../utils/content/personalData/personalData";
-import socialsMedias from "../utils/content/socialMedia/socialMedia";
+import "../sass/styles.scss";
+import MainHead from "@components/MainHead/MainHead.astro";
+import MainHeader from "@components/MainHeader/MainHeader.astro";
+import Footer from "@components/Footer/Footer.astro";
+import navBarLinks from "@utils/content/navBarLinks/navBarLinks";
+import personalData from "@utils/content/personalData/personalData";
+import socialsMedias from "@utils/content/socialMedia/socialMedia";
 
 const { name, firstSurname, secondSurname } = personalData;
 
@@ -32,7 +33,17 @@ const {
     <script>
       import AOS from "aos";
 
-      AOS.init();
+      AOS.init({
+        disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+      });
+
+      const reducedMotionQuery = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      );
+
+      reducedMotionQuery.addEventListener("change", () => {
+        location.reload();
+      });
 
       addEventListener("load", () =>
         document.documentElement.classList.add("loaded")

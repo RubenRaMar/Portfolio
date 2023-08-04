@@ -1,12 +1,11 @@
 ---
 import "@fontsource/lexend";
-import "../sass/styles.scss";
-import Layout from "../layouts/Layout.astro";
-import ContantMe from "../components/ContantMe/ContantMe.astro";
-import PageHeader from "../components/PageHeader/PageHeader.astro";
-import personalData from "../utils/content/personalData/personalData";
-import about from "../utils/content/about/about";
-import Roles from "../components/Roles/Roles.astro";
+import about from "@utils/content/about/about";
+import ContantMe from "@components/ContantMe/ContantMe.astro";
+import Layout from "@layouts/Layout.astro";
+import PageHeader from "@components/PageHeader/PageHeader.astro";
+import personalData from "@utils/content/personalData/personalData";
+import Roles from "@components/Roles/Roles.astro";
 
 const { name, firstSurname } = personalData;
 
@@ -30,6 +29,7 @@ const {
       <PageHeader title={title} tagline={tagline}>
         <img
           data-aos="zoom-in-up"
+          data-aos-anchor-placement="top-bottom"
           width="1553"
           height="873"
           src="/assets/profileImage.webp"
@@ -45,7 +45,7 @@ const {
           {
             aboutMeList.map((aboutMe, position) => (
               <>
-                <p data-aos="fade-left">
+                <p data-aos-anchor-placement="top-bottom" data-aos="zoom-in-up">
                   <Fragment set:html={aboutMe} />
                 </p>
                 {position !== aboutMeList.length - 1 && <br />}
@@ -65,7 +65,7 @@ const {
           {
             backgroundList.map((background, position) => (
               <>
-                <p data-aos="fade-left">
+                <p data-aos-anchor-placement="top-bottom" data-aos="zoom-in-up">
                   <Fragment set:html={background} />
                 </p>
                 {position !== backgroundList.length - 1 && <br />}
@@ -82,7 +82,7 @@ const {
         <article class="education__content with-background-image">
           {
             educationList.map((education) => (
-              <p data-aos="fade-left">
+              <p data-aos-anchor-placement="top-bottom" data-aos="zoom-in-up">
                 <Fragment set:html={education} />
               </p>
             ))

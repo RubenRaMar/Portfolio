@@ -73,7 +73,15 @@
 }
 
 @media (forced-colors: active) {
+  img {
+    filter: grayscale(1);
+  }
+
   .link.active {
     color: SelectedItem;
+  }
+
+  .nav-list {
+    background-color: #fff;
   }
 }

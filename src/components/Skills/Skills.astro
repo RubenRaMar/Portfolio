@@ -1,9 +1,13 @@
 ---
-import skills from "../../utils/content/skills/skills";
+import skills from "@utils/content/skills/skills";
 import Icon from "../Icon/Icon.astro";
 ---
 
-<section data-aos="fade-up" class="skills-list">
+<section
+  data-aos="zoom-in-up"
+  data-aos-anchor-placement="top-bottom"
+  class="skills-list"
+>
   {
     skills.map(({ icon, competency, description }) => (
       <article class="skills-list__skill container-column gap-2 lg:gap-4">
@@ -16,7 +20,12 @@ import Icon from "../Icon/Icon.astro";
           />
         )}
         <h2 class="skill__title">{competency}</h2>
-        <p data-aos="fade-up" class="skill__description">
+        <p
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-delay="200"
+          class="skill__description"
+        >
           {description}
         </p>
       </article>
