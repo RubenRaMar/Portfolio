@@ -9,8 +9,16 @@ type Props = {
 const { align = "center", title, titleName, tagline } = Astro.props;
 ---
 
-<section data-aos="zoom'in" class:list={["hero container-column gap-4", align]}>
-  <article class="hero__page-header container-column gap-8">
+<section
+  data-aos="zoom-in-down"
+  data-aos-anchor-placement="top-bottom"
+  class:list={["hero container-column gap-4", align]}
+>
+  <article
+    class="hero__page-header container-column gap-8"
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+  >
     <h1 class="page-header__title">
       {title}
       <span class="title__name">{titleName}</span>

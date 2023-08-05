@@ -1,12 +1,11 @@
 ---
-import "../sass/styles.scss";
-import Layout from "../layouts/Layout.astro";
-import PageHeader from "../components/PageHeader/PageHeader.astro";
-import Roles from "../components/Roles/Roles.astro";
-import { roles } from "../utils/content/roles/roles";
-import personalData from "../utils/content/personalData/personalData";
-import Skills from "../components/Skills/Skills.astro";
-import ContantMe from "../components/ContantMe/ContantMe.astro";
+import Layout from "@layouts/Layout.astro";
+import PageHeader from "@components/PageHeader/PageHeader.astro";
+import Roles from "@components/Roles/Roles.astro";
+import { roles } from "@utils/content/roles/roles";
+import personalData from "@utils/content/personalData/personalData";
+import Skills from "@components/Skills/Skills.astro";
+import ContantMe from "@components/ContantMe/ContantMe.astro";
 
 const { name, firstSurname, tagline, profileImage, altProfileImage } =
   personalData;
@@ -22,16 +21,19 @@ const { name, firstSurname, tagline, profileImage, altProfileImage } =
           align="start"
           tagline={tagline}
         >
-          <Roles roles={roles} />
+          <Roles roles={roles} dataAos="zoom-in" />
         </PageHeader>
 
-        <img
-          data-aos="zoom-in-left"
-          alt={altProfileImage()}
-          width="480"
-          height="620"
-          src={profileImage}
-        />
+        <a href="/about/" target="_blank" rel="noopener noreferrer">
+          <img
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="top-bottom"
+            alt={altProfileImage()}
+            width="480"
+            height="620"
+            src={profileImage}
+          /></a
+        >
       </header>
       <Skills />
     </section>

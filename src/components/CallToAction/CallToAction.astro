@@ -1,5 +1,5 @@
 ---
-import type { IconPathsProps } from "../../utils/icons/types";
+import type { IconPathsProps } from "@utils/icons/types";
 import Icon from "../Icon/Icon.astro";
 
 type Props = {
@@ -7,13 +7,12 @@ type Props = {
   size?: string;
   text?: string;
   icon?: keyof IconPathsProps;
-  dataAoa?: "fade-left" | "fade-right";
 };
 
-const { href, icon, size, text, dataAoa } = Astro.props;
+const { href, icon, size, text } = Astro.props;
 ---
 
-<div data-aos={dataAoa}>
+<div data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
   <a class="call-to-action" href={href}>
     {text}
     {icon && <Icon icon={icon} size={size} />}

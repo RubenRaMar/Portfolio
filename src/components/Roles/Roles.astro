@@ -1,19 +1,20 @@
 ---
 import Pill from "../Pill/Pill.astro";
 import Icon from "../Icon/Icon.astro";
-import type { CompetenciesStructure } from "../../utils/content/types";
+import type { CompetenciesStructure } from "@utils/content/types";
 
 type Props = {
   roles: CompetenciesStructure[];
+  dataAos?: "zoom-in-up" | "zoom-in";
 };
 
-const { roles } = Astro.props;
+const { roles, dataAos } = Astro.props;
 ---
 
 <section class="roles">
   {
     roles.map(({ competency: role, icon }) => (
-      <Pill>
+      <Pill dataAos={dataAos}>
         {icon && <Icon icon={icon} size="1.33em" />}
         {role}
       </Pill>

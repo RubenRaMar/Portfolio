@@ -1,1 +1,11 @@
-<div class="pill" data-aos="zoom-in"><slot /></div>
+---
+type Props = {
+  dataAos?: "zoom-in-up" | "zoom-in";
+};
+
+const { dataAos = "zoom-in-up" } = Astro.props;
+---
+
+<div class="pill" data-aos={dataAos} data-aos-anchor-placement="top-bottom">
+  <slot />
+</div>

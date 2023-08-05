@@ -1,6 +1,6 @@
 ---
-import socialMedia from "../../utils/content/socialMedia/socialMedia";
-import personalData from "../../utils/content/personalData/personalData";
+import socialMedia from "@utils/content/socialMedia/socialMedia";
+import personalData from "@utils/content/personalData/personalData";
 
 const currentYear = new Date().getFullYear();
 const { name, firstSurname } = personalData;
@@ -12,7 +12,7 @@ const { name, firstSurname } = personalData;
       {
         socialMedia.map(({ label, href }) => (
           <li>
-            <a class="link" href={href}>
+            <a class="link" target="_blank" href={href}>
               {label}
             </a>
           </li>
