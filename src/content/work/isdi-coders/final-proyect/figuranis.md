@@ -132,6 +132,6 @@ tags:
 
 <article class="work-informations with-background-image">
   <span class="work-informations__title">Conclusion</span>
-   <span class="section-divider"></span>
+  <span class="section-divider"></span>
   <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description"><span class="keyword">FIGURAniS</span> is a comprehensive and well-designed platform that provides a unique and immersive experience for managing <span class="keyword">anime figure</span> collections. With the use of the mentioned frameworks and tools, an efficient, scalable application with a user-friendly interface has been created for all anime enthusiasts. I am excited to share <span class="keyword">FIGURAniS</span> with other anime lovers so they can manage their <span class="keyword">collectible figures</span> and enjoy an unparalleled experience on this platform.</p>
 </article>
