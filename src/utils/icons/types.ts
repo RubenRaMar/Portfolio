@@ -8,7 +8,9 @@ export type IconPathsProps = {
   bug: string;
   "rocket-launch": string;
   list: string;
+  globe: string;
   heart: string;
+  cards: string;
   "magnifying-glass": string;
   "clock-clockwise": string;
   stack: string;
@@ -24,4 +26,5 @@ export type IconPathsProps = {
   "linkedin-logo": string;
   "instagram-logo": string;
   "tiktok-logo": string;
+  "figma-logo": string;
 };

@@ -31,7 +31,7 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: ["/*.js", "/*.cjs"],
+  ignorePatterns: ["/*.js", "/*.cjs", "config.ts"],
 
   parser: "@typescript-eslint/parser",
   plugins: ["jsx-a11y"],

@@ -5,6 +5,16 @@
 @use "../variables/animations";
 @use "../functions/functions";
 
+.navbar {
+  display: initial;
+  width: initial;
+  height: initial;
+  line-height: initial;
+  background-color: transparent;
+  color: inherit;
+  box-shadow: none;
+}
+
 .nav-list {
   display: flex;
   flex-direction: column;
@@ -34,7 +44,7 @@
 }
 
 @media (min-width: 800px) {
-  .nav-list {
+  ul.nav-list {
     flex-direction: row;
     align-items: center;
     font-size: font-size.$text-sm;

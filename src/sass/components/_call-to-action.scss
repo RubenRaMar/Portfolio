@@ -29,7 +29,6 @@
   mix-blend-mode: overlay;
 }
 
-.call-to-action:focus::after,
 .call-to-action:hover::after {
   background-color: hsla(var(--gray-999-basis), 0.3);
 }

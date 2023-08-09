@@ -37,15 +37,6 @@
     color: colors.$accent-regular;
     text-decoration-color: colors.$accent-regular;
   }
-
-  .section-divider {
-    background: gradients.$gradient-accent;
-    height: 1.4px;
-    border-radius: 50%;
-    grid-column: 2/4;
-    grid-column-end: 2;
-    box-shadow: shadows.$shadow-lg;
-  }
 }
 
 html:not(.theme-dark) .about {
@@ -86,7 +77,7 @@ html:not(.theme-dark) .about {
 @media (min-width: 800px) {
   .about {
     display: grid;
-    grid-template-columns: 1fr 60% 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
 
     .hero {
       grid-column-start: 2;

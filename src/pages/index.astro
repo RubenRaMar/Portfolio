@@ -1,20 +1,28 @@
 ---
+import { getCollection } from "astro:content";
+import { roles } from "@utils/content/roles/roles";
+import CallToAction from "@components/CallToAction/CallToAction.astro";
+import ContantMe from "@components/ContantMe/ContantMe.astro";
+import Grid from "@components/Grid/Grid.astro";
 import Layout from "@layouts/Layout.astro";
 import PageHeader from "@components/PageHeader/PageHeader.astro";
-import Roles from "@components/Roles/Roles.astro";
-import { roles } from "@utils/content/roles/roles";
 import personalData from "@utils/content/personalData/personalData";
+import Roles from "@components/Roles/Roles.astro";
 import Skills from "@components/Skills/Skills.astro";
-import ContantMe from "@components/ContantMe/ContantMe.astro";
+import WorksPreview from "@components/WorkPreview/WorkPreview.astro";
 
 const { name, firstSurname, tagline, profileImage, altProfileImage } =
   personalData;
+
+const works = (await getCollection("work"))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 4);
 ---
 
 <Layout>
-  <main class="container-column gap-20 lg:gap-48">
+  <main class="container-column gap-20 lg:gap-30">
     <section class="wrapper container-column gap-8 lg:gap-20">
-      <header class="home-header">
+      <header class="home-header container-column">
         <PageHeader
           title="Hello, my name is"
           titleName={`${name} ${firstSurname}`}
@@ -36,6 +44,50 @@ const { name, firstSurname, tagline, profileImage, altProfileImage } =
         >
       </header>
       <Skills />
+    </section>
+
+    <section class="works-container wrapper container-column gap-20 lg:gap-48">
+      <article
+        class="works-container__works works-container__works--with-call-to-action with-background-image"
+      >
+        <section class="works__header container-column gap-2 lg:gap-4">
+          <h3
+            data-aos="zoom-in-down"
+            data-aos-anchor-placement="top-bottom"
+            class="header__title"
+          >
+            Selected Work
+          </h3>
+          <p
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="top-bottom"
+            class="header__description"
+          >
+            Take a look at some of my featured work.
+          </p>
+        </section>
+
+        <section class="gallery-container">
+          <Grid variant="offset">
+            {
+              works.map((work) => (
+                <li>
+                  <WorksPreview works={work} />
+                </li>
+              ))
+            }
+          </Grid>
+        </section>
+
+        <section class="call-to-action-container">
+          <CallToAction
+            text="View All"
+            icon="cards"
+            size="1.4em"
+            href="/work/"
+          />
+        </section>
+      </article>
     </section>
 
     <ContantMe />

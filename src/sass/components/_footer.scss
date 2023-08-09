@@ -36,8 +36,7 @@
   transition: text-decoration-color animations.$theme-transition;
 }
 
-.link:hover,
-.link:focus {
+.link:hover {
   text-decoration-color: currentColor;
 }
 
