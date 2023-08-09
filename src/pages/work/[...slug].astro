@@ -1,0 +1,86 @@
+---
+import CallToAction from "@components/CallToAction/CallToAction.astro";
+import ContantMe from "@components/ContantMe/ContantMe.astro";
+import PageHeader from "@components/PageHeader/PageHeader.astro";
+import Roles from "@components/Roles/Roles.astro";
+import Layout from "@layouts/Layout.astro";
+import { CollectionEntry, getCollection } from "astro:content";
+
+interface Props {
+  entry: CollectionEntry<"work">;
+}
+
+export async function getStaticPaths() {
+  const work = await getCollection("work");
+  return work.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const {
+  entry: {
+    data: { description, headerTitle, tags, title, images, links },
+    render,
+  },
+} = Astro.props;
+const { Content } = await render();
+---
+
+<Layout title={title} description={description}>
+  <div class="container-column gap-20">
+    <main class="work-container container-column gap-10">
+      <section class="work-container__header wrapper container-column gap-20">
+        <PageHeader title={headerTitle} tagline={description}>
+          <ul class="works-links">
+            {
+              links.map((link) => (
+                <li>
+                  <CallToAction
+                    href={link.href}
+                    text={link.label}
+                    icon={link.icon}
+                    size="2em"
+                  />
+                </li>
+              ))
+            }
+          </ul>
+          <ul class="carousel center-align">
+            {
+              images &&
+                images.map((image) => (
+                  <li class="carousel-item">
+                    <div
+                      data-aos="zoom-in-up"
+                      data-aos-anchor-placement="top-bottom"
+                      class="carousel-item__image-container"
+                    >
+                      {
+                        <h2 class="image-container__title title">
+                          {image.title}
+                        </h2>
+                      }
+                      <img
+                        class="image-container__image"
+                        src={image.src}
+                        alt={image.alt}
+                      />
+                    </div>
+                  </li>
+                ))
+            }
+          </ul>
+          <Roles roles={tags} dataAos="zoom-in" />
+        </PageHeader>
+
+        <section class="work-data container-column gap-10 content">
+          <article class="work-data__content container-column">
+            <Content />
+          </article>
+        </section>
+      </section>
+      <ContantMe />
+    </main>
+  </div>
+</Layout>
