@@ -4,7 +4,7 @@
 .app-container {
   min-height: 100%;
   isolation: isolate;
-  background: url("/assets/backgrounds/noise.png") top center/220px repeat,
+  background: url("/images/backgrounds/noise.png") top center/220px repeat,
     background.$bg-image-footer bottom center/background.$bg-gradient-size
       no-repeat,
     background.$bg-image-main-curves top center/background.$bg-gradient-size

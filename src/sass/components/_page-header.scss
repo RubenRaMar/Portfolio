@@ -1,10 +1,12 @@
 @use "../variables/font-size";
 @use "../variables/colors";
+@use "../variables/typography";
 @use "../variables/gradients";
 
 .hero {
   font-size: font-size.$text-lg;
   text-align: center;
+  align-items: center;
 }
 
 .page-header {
@@ -35,6 +37,7 @@
 
   .start {
     text-align: start;
+    align-items: flex-start;
   }
 
   .page-header {

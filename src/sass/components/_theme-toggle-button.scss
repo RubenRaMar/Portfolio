@@ -21,6 +21,8 @@
     z-index: 1;
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 8px;
     width: 32px;
     height: 32px;
@@ -34,7 +36,7 @@
     position: absolute;
     inset: 0;
     background-color: colors.$accent-regular;
-    border-radius: functions.pixelsToRem(16);
+    border-radius: 50%;
   }
 
   html.theme-dark &__icon.light::before {
@@ -46,6 +48,10 @@
   .theme-toggle[aria-pressed="false"] &__icon.light {
     color: colors.$accent-text-over;
   }
+}
+
+.theme-toggle:focus {
+  background-color: colors.$gray-999;
 }
 
 @media (prefers-reduced-motion: no-preference) {
