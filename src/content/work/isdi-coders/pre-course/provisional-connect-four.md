@@ -1,8 +1,8 @@
 ---
-title: Work | FIGURAniS
-headerTitle: FIGURAniS
+title: Work | Connect 4
+headerTitle: Connect 4
 publishDate: 2023-06-17
-dataAos: "flip-down"
+dataAos: "flip-right"
 description: FIGURAniS is an anime figurine collectibles management application. With FIGURAniS, you can read, add, edit, and delete anime figures from your collection.
 links:
   [
@@ -11,63 +11,30 @@ links:
       href: "https://github.com/RubenRaMar/Figuranis",
       icon: "github-logo",
     },
-    {
-      label: "BACKEND",
-      href: "https://github.com/RubenRaMar/Figuranis-API",
-      icon: "github-logo",
-    },
-    {
-      label: "FIGMA",
-      href: "https://www.figma.com/file/162SkmxBeZ8VRPLiFPcY5C/Ruben-Ramirez-Final-Project-202304-bcn?type=design&node-id=54%3A361&mode=design&t=OwbVpZkXhJ74mG7x-1",
-      icon: "figma-logo",
-    },
     { icon: "globe", label: "DEMO", href: "https://figuranis.netlify.app" },
   ]
 headerImage:
   {
-    src: /images/works/figuranis/miniature.webp,
-    alt: Cover with the Figuranis logo and the homepage in the background.,
+    src: /images/works/connect-four/miniature.webp,
+    alt: Portada con el logo de Connect 4 y el juego de fondo,
   }
 images:
   [
     {
-      src: /images/works/figuranis/miniature-carrusel.webp,
-      alt: Cover with the Figuranis logo and the homepage in the background.,
+      src: /images/works/connect-four/miniature.webp,
+      alt: Portada con el logo de Figuranis y la pagina de inicio de fondo.,
+      title: "",
     },
 
     {
-      src: /images/works/figuranis/details.webp,
-      alt: Detail page of a figure with an image and various data.,
+      src: /images/works/connect-four/connect-four.png,
+      alt: Pagina de detalle le una figura con imagen y varios datos.,
       title: "Details",
     },
-
     {
-      src: /images/works/figuranis/home.webp,
-      alt: Figuranis homepage with several figures with images and some data.,
-      title: "Home",
-    },
-    {
-      src: /images/works/figuranis/sonarcloud.webp,
-      alt: SonarCloud data.,
-      title: "SonarCloud",
-    },
-
-    {
-      src: /images/works/figuranis/figma.webp,
-      alt: Design created with Figma for building the Figuranis application.,
-      title: "Diseño en figma",
-    },
-
-    {
-      src: /images/works/figuranis/modify&add.webp,
-      alt: Sample of forms for creating and modifying figures.,
-      title: "Modify & Add",
-    },
-
-    {
-      src: /images/works/figuranis/login.webp,
-      alt: Page to log into the Figuranis application.,
-      title: "Login",
+      src: /images/works/connect-four/connect-four.png,
+      alt: Pagina de detalle le una figura con imagen y varios datos.,
+      title: "Details",
     },
   ]
 

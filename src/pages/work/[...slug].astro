@@ -1,6 +1,6 @@
 ---
 import CallToAction from "@components/CallToAction/CallToAction.astro";
-import ContantMe from "@components/ContantMe/ContantMe.astro";
+import ContactMe from "@components/ContactMe/ContactMe.astro";
 import PageHeader from "@components/PageHeader/PageHeader.astro";
 import Roles from "@components/Roles/Roles.astro";
 import Layout from "@layouts/Layout.astro";
@@ -65,6 +65,8 @@ const { Content } = await render();
                         class="image-container__image"
                         src={image.src}
                         alt={image.alt}
+                        width="500"
+                        height="385"
                       />
                     </div>
                   </li>
@@ -80,7 +82,7 @@ const { Content } = await render();
           </article>
         </section>
       </section>
-      <ContantMe />
+      <ContactMe />
     </main>
   </div>
 </Layout>
