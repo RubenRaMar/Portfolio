@@ -1,7 +1,7 @@
 ---
 import "@fontsource/lexend";
 import about from "@utils/content/about/about";
-import ContantMe from "@components/ContantMe/ContantMe.astro";
+import ContactMe from "@components/ContactMe/ContactMe.astro";
 import Layout from "@layouts/Layout.astro";
 import PageHeader from "@components/PageHeader/PageHeader.astro";
 import personalData from "@utils/content/personalData/personalData";
@@ -21,8 +21,8 @@ const {
 ---
 
 <Layout
-  title={`About | ${name} ${firstSurname}`}
-  description={`About ${name} ${firstSurname}`}
+  title={`${title} | ${name} ${firstSurname}`}
+  description={`${title} ${name} ${firstSurname}`}
 >
   <div class="container-column gap-20">
     <main class="about wrapper">
@@ -109,6 +109,6 @@ const {
       </section>
     </main>
 
-    <ContantMe />
+    <ContactMe />
   </div>
 </Layout>

@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import { roles } from "@utils/content/roles/roles";
 import CallToAction from "@components/CallToAction/CallToAction.astro";
-import ContantMe from "@components/ContantMe/ContantMe.astro";
+import ContactMe from "@components/ContactMe/ContactMe.astro";
 import Grid from "@components/Grid/Grid.astro";
 import Layout from "@layouts/Layout.astro";
 import PageHeader from "@components/PageHeader/PageHeader.astro";
@@ -90,6 +90,6 @@ const works = (await getCollection("work"))
       </article>
     </section>
 
-    <ContantMe />
+    <ContactMe />
   </main>
 </Layout>

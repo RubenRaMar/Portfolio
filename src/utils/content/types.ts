@@ -35,3 +35,9 @@ export type AboutStructure = {
   softSkills: CompetenciesStructure[];
   hardSkills: CompetenciesStructure[];
 };
+
+export type WorkStructure = {
+  title: string;
+  description: string;
+  tagline: string;
+};
