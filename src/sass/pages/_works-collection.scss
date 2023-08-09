@@ -82,16 +82,12 @@ html:not(.theme-dark) .keyword {
 
 .work-data {
   &__content {
-    display: flex;
-    flex-direction: column;
     gap: 50px;
     margin-inline: auto;
   }
 }
 
 .work-informations {
-  display: flex;
-  flex-direction: column;
   gap: 30px;
 
   &__title {
@@ -101,16 +97,12 @@ html:not(.theme-dark) .keyword {
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
     gap: 20px;
   }
 }
 
 .list {
   &__information {
-    display: flex;
-    flex-direction: column;
     background-color: colors.$gray-900;
   }
 }

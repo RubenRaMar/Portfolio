@@ -33,6 +33,7 @@ const {
 
     <script>
       import AOS from "aos";
+      import M from "materialize-css";
 
       AOS.init({
         disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
@@ -42,6 +43,14 @@ const {
         "(prefers-reduced-motion: reduce)"
       );
 
+      document.addEventListener("DOMContentLoaded", () => {
+        const carousel = document.querySelectorAll(".carousel");
+
+        M.Carousel.init(carousel, {
+          duration: 150,
+        });
+      });
+
       reducedMotionQuery.addEventListener("change", () => {
         location.reload();
       });
@@ -50,5 +59,9 @@ const {
         document.documentElement.classList.add("loaded")
       );
     </script>
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
   </body>
 </html>

@@ -15,6 +15,7 @@
     "@fontsource/rubik": "^5.0.5",
     "@types/node": "^20.3.2",
     "astro": "^2.7.0",
+    "materialize-css": "^1.0.0",
     "sass": "^1.63.6"
   },
   "devDependencies": {
