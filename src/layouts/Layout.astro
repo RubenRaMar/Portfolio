@@ -37,6 +37,7 @@ const {
 
       AOS.init({
         disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+        once: true,
       });
 
       const reducedMotionQuery = window.matchMedia(

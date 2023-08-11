@@ -20,10 +20,6 @@
   &__image-container {
     position: relative;
   }
-
-  &:hover .title {
-    opacity: 1;
-  }
 }
 
 .image-container {
@@ -128,19 +124,6 @@ html:not(.theme-dark) .keyword {
   }
 }
 
-.header {
-  &__back-link {
-    display: none;
-    text-decoration: 1px solid underline transparent;
-    text-underline-offset: 0.25em;
-    transition: text-decoration-color animations.$theme-transition;
-  }
-
-  &__back-link:hover {
-    text-decoration-color: currentColor;
-  }
-}
-
 .work-data {
   align-items: center;
 
@@ -164,10 +147,9 @@ html:not(.theme-dark) .keyword {
     }
   }
 
-  .header {
-    &__back-link {
-      display: block;
-      align-self: flex-start;
+  .carousel-item {
+    &:hover .title {
+      opacity: 1;
     }
   }
 
