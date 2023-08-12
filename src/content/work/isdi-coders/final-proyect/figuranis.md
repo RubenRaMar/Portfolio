@@ -6,6 +6,12 @@ dataAos: "flip-down"
 description: FIGURAniS is an anime figurine collectibles management application. With FIGURAniS, you can read, add, edit, and delete anime figures from your collection.
 links:
   [
+    { icon: "globe", label: "DEMO", href: "https://figuranis.netlify.app" },
+    {
+      label: "FIGMA",
+      href: "https://www.figma.com/file/162SkmxBeZ8VRPLiFPcY5C/Ruben-Ramirez-Final-Project-202304-bcn?type=design&node-id=54%3A361&mode=design&t=OwbVpZkXhJ74mG7x-1",
+      icon: "figma-logo",
+    },
     {
       label: "FRONTEND",
       href: "https://github.com/RubenRaMar/Figuranis",
@@ -16,12 +22,6 @@ links:
       href: "https://github.com/RubenRaMar/Figuranis-API",
       icon: "github-logo",
     },
-    {
-      label: "FIGMA",
-      href: "https://www.figma.com/file/162SkmxBeZ8VRPLiFPcY5C/Ruben-Ramirez-Final-Project-202304-bcn?type=design&node-id=54%3A361&mode=design&t=OwbVpZkXhJ74mG7x-1",
-      icon: "figma-logo",
-    },
-    { icon: "globe", label: "DEMO", href: "https://figuranis.netlify.app" },
   ]
 headerImage:
   {
@@ -55,7 +55,7 @@ images:
     {
       src: /images/works/figuranis/figma.webp,
       alt: Design created with Figma for building the Figuranis application.,
-      title: "Diseño en figma",
+      title: "Figma",
     },
 
     {
