@@ -1,9 +1,13 @@
 import type { AboutStructure } from "../types";
+import personalData from "../personalData/personalData";
+
+const { name, firstSurname } = personalData;
 
 const about: AboutStructure = {
   title: "About",
   tagline:
     "Thanks for stopping by. Read below to learn more about myself and my background.",
+  description: `Discover the personal journey and background of ${name} ${firstSurname}`,
   aboutMeList: [
     `From an early age, my <span>passion for technology</span> led me to explore different ways of expressing my <span>creativity</span>, which led me to create projects on platforms like Twitch and <a href="https://www.youtube.com/channel/UCQp8FVb1lPhVEKlQv273y_Q" target="_blank">YouTube</a>. Although I'm not currently dedicated to it, that experience provided me with <span>valuable communication and creativity skills</span> that are transferable to my career as a developer.`,
 

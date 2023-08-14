@@ -3,7 +3,7 @@ title: Work | Connect 4
 headerTitle: Connect 4
 publishDate: 2023-03-24
 dataAos: "flip-right"
-description: My second project, "Connect 4," emerged during the ISDICoders bootcamp's pre-course. While it wasn't a requirement, I chose to invest a significant effort to showcase my potential. This game, inspired by the universe of "Connect 4," stands as a testament to my dedication and learning in web development.
+description: My second project, Connect 4 emerged during the ISDICoders bootcamp's pre-course. While it wasn't a requirement, I chose to invest a significant effort to showcase my potential. This game, inspired by the universe of Connect 4, stands as a testament to my dedication and learning in web development.
 links:
   [
     {
@@ -67,7 +67,7 @@ tags:
     <span class="work-informations__title">Key Features</span>
     <span class="section-divider"></span>
     <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">
-        In this project, you will immerse yourself in the exciting world of the game "<span class="keyword">Connect 4</span>" as you implement the game logic to create an engaging experience. This project was developed as part of the <span class="keyword">ISDI Coders pre-course</span>, and although it was optional, I decided to dedicate a <span class="keyword">considerable effort</span> to showcase my <span class="keyword">commitment and skills</span>. The game features vibrant colors and is based on the original "<span class="keyword">Connect 4</span>" game, with the <span class="keyword">iconic board design</span>.
+        In this project, you will immerse yourself in the exciting world of the game <span class="keyword">Connect 4</span> as you implement the game logic to create an engaging experience. This project was developed as part of the <span class="keyword">ISDI Coders pre-course</span>, and although it was optional, I decided to dedicate a <span class="keyword">considerable effort</span> to showcase my <span class="keyword">commitment and skills</span>. The game features vibrant colors and is based on the original <span class="keyword">Connect 4</span> game, with the <span class="keyword">iconic board design</span>.
     </p>
     <ul class="work-informations__list container-column">
         <li class="list__information container-column">
@@ -101,7 +101,7 @@ tags:
     <span class="work-informations__title">Used Technologies</span>
     <span class="section-divider"></span>
     <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">
-        The "<span class="keyword">Connect 4</span>" project was built using modern web technologies, including <span class="keyword">HTML</span>, <span class="keyword">CSS</span>, and <span class="keyword">JavaScript</span>. <span class="keyword">DOM manipulation</span> was used to create the interactive experience of the board and the chips.
+        The <span class="keyword">Connect 4</span> project was built using modern web technologies, including <span class="keyword">HTML</span>, <span class="keyword">CSS</span>, and <span class="keyword">JavaScript</span>. <span class="keyword">DOM manipulation</span> was used to create the interactive experience of the board and the chips.
     </p>
 </article>
 
@@ -109,7 +109,7 @@ tags:
     <span class="work-informations__title">Interface and User Experience</span>
     <span class="section-divider"></span>
     <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">
-        The <span class="keyword">interface was carefully designed</span> to offer an <span class="keyword">immersive experience</span>. Visual elements like the chips and board design capture the <span class="keyword">essence of the "Connect 4" game</span> and add <span class="keyword">authenticity</span> to the <span class="keyword">gaming experience</span>.
+        The <span class="keyword">interface was carefully designed</span> to offer an <span class="keyword">immersive experience</span>. Visual elements like the chips and board design capture the <span class="keyword">essence of the Connect 4 game</span> and add <span class="keyword">authenticity</span> to the <span class="keyword">gaming experience</span>.
     </p>
 </article>
 
@@ -117,6 +117,6 @@ tags:
     <span class="work-informations__title">Conclusion</span>
     <span class="section-divider"></span>
     <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">
-        The "<span class="keyword">Connect 4</span>" project is <span class="keyword">exciting</span> as it combines the fun of the classic game with a modern twist. By offering an <span class="keyword">interactive and visually appealing experience</span>, this project captures players' imagination and invites them to enjoy a <span class="keyword">themed and challenging game</span>.
+        The <span class="keyword">Connect 4</span> project is <span class="keyword">exciting</span> as it combines the fun of the classic game with a modern twist. By offering an <span class="keyword">interactive and visually appealing experience</span>, this project captures players' imagination and invites them to enjoy a <span class="keyword">themed and challenging game</span>.
     </p>
 </article>

@@ -1,0 +1,47 @@
+---
+import Layout from "@layouts/Layout.astro";
+import personalData from "@utils/content/personalData/personalData";
+import educationTraining from "@utils/content/educationTraining/educationTrainig";
+import PageHeader from "@components/PageHeader/PageHeader.astro";
+import ContactMe from "@components/ContactMe/ContactMe.astro";
+import Icon from "@components/Icon/Icon.astro";
+
+const { name, firstSurname } = personalData;
+const { title, tagline, description, videoDetails } = educationTraining;
+---
+
+<Layout title={`${title} |${name} ${firstSurname}`} description={description}>
+  <div class="container-column gap-20">
+    <main class="wrapper container-column gap-8">
+      <PageHeader title={title} tagline={tagline} />
+
+      <section class="media-container">
+        <ul class="media-container__video-details">
+          {
+            videoDetails.map((videoDetail) => (
+              <li class="video-details__item">
+                <div class="item__detail">
+                  <span class="detail__name">{videoDetail.name}</span>
+                  <span class="detail__tagline">{videoDetail.tagline}</span>
+                  <a class="detail__linkedin" href={videoDetail.linkedin.href}>
+                    <Icon icon="linkedin-logo" size="1.6em" />
+                    {videoDetail.linkedin.username}
+                  </a>
+                </div>
+                <video
+                  class="item__video"
+                  poster={`/images/edication-training/${videoDetail.image}`}
+                  src={videoDetail.src}
+                  width="385"
+                  height="217"
+                  controls
+                />
+              </li>
+            ))
+          }
+        </ul>
+        <ContactMe />
+      </section>
+    </main>
+  </div>
+</Layout>
