@@ -1,0 +1,362 @@
+---
+import Layout from "@layouts/Layout.astro";
+import personalData from "@utils/content/personalData/personalData";
+import educationTraining from "@utils/content/educationTraining/educationTrainig";
+import PageHeader from "@components/PageHeader/PageHeader.astro";
+import ContactMe from "@components/ContactMe/ContactMe.astro";
+import Icon from "@components/Icon/Icon.astro";
+
+const { name, firstSurname } = personalData;
+const { title, tagline, description, videoDetails } = educationTraining;
+---
+
+<Layout title={`${title} |${name} ${firstSurname}`} description={description}>
+  <div class="container-column gap-20">
+    <main class="wrapper container-column gap-20">
+      <PageHeader title={title} tagline={tagline} />
+
+      <section class="container-column gap-20">
+        <article class="work-informations container-column">
+          <span class="work-informations__title"
+            >Experiencia en ISDI Coders Bootcamp</span
+          >
+          <span class="section-divider"></span>
+          <p
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="top-bottom"
+            class="work-informations__description"
+          >
+            Mi experiencia en <span class="keyword">ISDI Coders Bootcamp</span> fue
+            increíblemente enriquecedora y desafiante. Comenzó con un precurso de
+            6 meses, desde noviembre de 2022 hasta abril de 2023. Durante este periodo,
+            recibimos una guía para aprender de manera autodidacta <span
+              class="keyword">HTML</span
+            >, <span class="keyword">CSS</span>, <span class="keyword">DOM</span
+            > y
+            <span class="keyword">JavaScript</span>. Ejercicios y proyectos
+            prácticos, como <span class="keyword">Pasapalabra</span> y <span
+              class="keyword">Conecta 4</span
+            >, nos ayudaron a aplicar los conocimientos adquiridos. Supervisados
+            por los profesores a través de <span class="keyword">TRELLO</span>,
+            estas lecciones se combinaron con clases presenciales de 3 horas los
+            miércoles, de enero a abril.
+          </p>
+          <p
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="top-bottom"
+            class="work-informations__description"
+          >
+            La primera semana de abril marcó el inicio de un <span
+              class="keyword">bootcamp intensivo</span
+            > de 11 semanas. Esta etapa fue un desafío que abordé con determinación.
+            Clases diarias y retos individuales y de equipo llenaron mis días y noches.
+            Mi compromiso me llevó a trabajar hasta altas horas de la noche para
+            aprovechar al máximo esta experiencia. El bootcamp fue un reto debido
+            a la intensidad del programa. Se nos presentaba el contenido, se nos
+            asignaban ejercicios y al día siguiente debíamos entregar un desafío
+            relacionado. Las sesiones de revisión eran esenciales para aclarar dudas.
+            Aunque el camino fue difícil, logré enfrentar la presión y superar los
+            desafíos. No todos lograron superar esta etapa, pero mi determinación
+            me impulsó hacia adelante.
+          </p>
+        </article>
+
+        <article class="work-informations container-column">
+          <span class="work-informations__title">Plan de Estudios</span>
+          <span class="section-divider"></span>
+          <ul class="work-informations__list container-column">
+            <li class="list__information container-column">
+              <span class="information__title">Semana 1</span>
+              <p
+                data-aos="zoom-in-up"
+                data-aos-anchor-placement="top-bottom"
+                class="information__description"
+              >
+                <span class="keyword">Introducción</span>, <span class="keyword"
+                  >Git</span
+                >, <span class="keyword">GitHub</span>, <span class="keyword"
+                  >HTML</span
+                >, <span class="keyword">CSS</span>, <span class="keyword"
+                  >Sass</span
+                >, <span class="keyword">BEM</span>, <span class="keyword"
+                  >Netlify</span
+                >, <span class="keyword">ESLint</span>. Durante esta semana, se
+                proporcionó una introducción al bootcamp y se cubrieron
+                herramientas esenciales para el desarrollo web, junto con
+                fundamentos de <span class="keyword">HTML</span> y <span
+                  class="keyword">CSS</span
+                >. También se exploraron conceptos como <span class="keyword"
+                  >Sass</span
+                > y <span class="keyword">BEM</span> para una estructura eficiente
+                de estilos. Aprendimos a desplegar sitios web en <span
+                  class="keyword">Netlify</span
+                > y se introdujo la práctica de <span class="keyword"
+                  >ESLint</span
+                > para mantener un código limpio y consistente.
+              </p>
+            </li>
+            <li class="list__information container-column">
+              <span class="information__title">Semana 2</span>
+              <p
+                data-aos="zoom-in-up"
+                data-aos-anchor-placement="top-bottom"
+                class="information__description"
+              >
+                <span class="keyword">JavaScript</span>, <span class="keyword"
+                  >TypeScript</span
+                >, <span class="keyword">Husky</span>, <span class="keyword"
+                  >Fetch</span
+                >, <span class="keyword">Promesas</span>. Profundizamos en el
+                lenguaje de programación <span class="keyword">JavaScript</span>
+                y se introdujo <span class="keyword">TypeScript</span>, una
+                extensión tipada de <span class="keyword">JavaScript</span>.
+                Además, abordamos el uso de <span class="keyword">Husky</span> para
+                mantener estándares de codificación y exploramos conceptos como <span
+                  class="keyword">Fetch</span
+                > y <span class="keyword">Promesas</span> para la manipulación de
+                datos asincrónica.
+              </p>
+            </li>
+            <li class="list__information container-column">
+              <span class="information__title">Semana 3</span>
+              <p
+                data-aos="zoom-in-up"
+                data-aos-anchor-placement="top-bottom"
+                class="information__description"
+              >
+                <span class="keyword">API Rest</span>, <span class="keyword"
+                  >Testing</span
+                >. Exploramos los conceptos de <span class="keyword"
+                  >API REST</span
+                > y cómo interactuar con servicios web para obtener y manipular datos.
+                También abordamos las prácticas de pruebas unitarias y de integración,
+                aprendiendo a asegurar la funcionalidad correcta de las aplicaciones
+                mediante pruebas automatizadas utilizando herramientas como <span
+                  class="keyword">Jest</span
+                > y <span class="keyword">Supertest</span>.
+              </p>
+            </li>
+            <li class="list__information container-column">
+              <span class="information__title">Semana 4</span>
+              <p
+                data-aos="zoom-in-up"
+                data-aos-anchor-placement="top-bottom"
+                class="information__description"
+              >
+                <span class="keyword">React</span>, <span class="keyword"
+                  >useReducer</span
+                >. Durante esta semana, nos introdujimos a <span class="keyword"
+                  >React</span
+                >, una biblioteca de <span class="keyword">JavaScript</span> para
+                construir interfaces de usuario interactivas y reutilizables. Exploramos
+                conceptos básicos de componentes, estados y propiedades. Además,
+                aprendimos a utilizar <span class="keyword">useReducer</span> para
+                manejar estados más complejos y controlar el flujo de datos en la
+                aplicación.
+              </p>
+            </li>
+            <li class="list__information container-column">
+              <span class="information__title">Semana 5</span>
+              <p
+                data-aos="zoom-in-up"
+                data-aos-anchor-placement="top-bottom"
+                class="information__description"
+              >
+                <span class="keyword">Proyecto de equipo</span>, <span
+                  class="keyword">CRUD</span
+                > con <span class="keyword">API</span> de terceros. Trabajamos en
+                un proyecto de equipo con tres personas. El objetivo fue crear un
+                <span class="keyword">CRUD</span> que se conectara a una <span
+                  class="keyword">API</span
+                > de terceros para obtener y manipular datos. Aprendimos sobre colaboración
+                y coordinación en el desarrollo en equipo.
+              </p>
+            </li>
+            <li class="list__information container-column">
+              <span class="information__title">Semana 6</span>
+              <p
+                data-aos="zoom-in-up"
+                data-aos-anchor-placement="top-bottom"
+                class="information__description"
+              >
+                <span class="keyword">Redux</span> y estado global. Profundizamos
+                en el manejo del estado global de la aplicación utilizando <span
+                  class="keyword">Redux Toolkit</span
+                >. Exploramos conceptos como acciones, reducers y store para
+                crear una arquitectura eficiente de manejo de estados en
+                aplicaciones más grandes.
+              </p>
+            </li>
+            <li class="list__information container-column">
+              <span class="information__title">Semana 7</span>
+              <p
+                data-aos="zoom-in-up"
+                data-aos-anchor-placement="top-bottom"
+                class="information__description"
+              >
+                <span class="keyword">Creación de API Rest</span>. Aprendimos a
+                construir <span class="keyword">API REST</span> desde cero. Abordamos
+                aspectos como la estructura de las rutas, el manejo de peticiones
+                HTTP y la interacción con bases de datos utilizando <span
+                  class="keyword">Express.js</span
+                > y <span class="keyword">MongoDB</span>.
+              </p>
+            </li>
+            <li class="list__information container-column">
+              <span class="information__title">Semana 8</span>
+              <p
+                data-aos="zoom-in-up"
+                data-aos-anchor-placement="top-bottom"
+                class="information__description"
+              >
+                <span class="keyword">Integración entre frontend y backend</span
+                >. Exploramos las estrategias y herramientas para integrar el
+                frontend y el backend en una aplicación completa. Aprendimos
+                cómo comunicar datos entre ambos mediante solicitudes HTTP y
+                discutimos la importancia de la seguridad y la validación de
+                datos.
+              </p>
+            </li>
+            <li class="list__information container-column">
+              <span class="information__title">Semanas 9, 10, 11</span>
+              <p
+                data-aos="zoom-in-up"
+                data-aos-anchor-placement="top-bottom"
+                class="information__description"
+              >
+                <span class="keyword">Proyecto final</span>: Creación de un <span
+                  class="keyword">CRUD individual</span
+                > con frontend y backend. Aplicamos todo lo aprendido para desarrollar
+                un proyecto individual completo. Creamos un <span
+                  class="keyword">CRUD</span
+                > que involucra tanto el frontend como el backend, demostrando nuestra
+                capacidad para construir aplicaciones funcionales y escalables desde
+                cero.
+              </p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="work-informations container-column">
+          <span class="work-informations__title"
+            >Tecnologías y Habilidades Adquiridas</span
+          >
+          <span class="section-divider"></span>
+          <p
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="top-bottom"
+            class="work-informations__description"
+          >
+            Durante mi tiempo en <span class="keyword">ISDI Coders</span>, tuve
+            la oportunidad de trabajar con una amplia gama de tecnologías. Desde
+            la construcción de aplicaciones con el stack <span class="keyword"
+              >MERN</span
+            > (<span class="keyword">MongoDB</span>, <span class="keyword"
+              >Express.js</span
+            >, <span class="keyword">React</span> y <span class="keyword"
+              >Node.js</span
+            >), hasta la gestión de estado global utilizando <span
+              class="keyword">Redux Toolkit</span
+            >. Además, adquirí experiencia en enrutamiento con <span
+              class="keyword">React Router Dom</span
+            > y en pruebas unitarias y de integración con <span class="keyword"
+              >Jest</span
+            > y otras herramientas.
+          </p>
+        </article>
+
+        <article class="work-informations container-column">
+          <span class="work-informations__title">Desafíos y Logros</span>
+          <span class="section-divider"></span>
+          <p
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="top-bottom"
+            class="work-informations__description"
+          >
+            A lo largo de mi experiencia en <span class="keyword"
+              >ISDI Coders</span
+            >, enfrenté desafíos que pusieron a prueba mis habilidades y mi
+            dedicación. Desde la intensidad del <span class="keyword"
+              >bootcamp</span
+            > hasta la resolución de problemas técnicos complejos, cada obstáculo
+            superado me ayudó a crecer como desarrollador. Los proyectos como <span
+              class="keyword">Pasapalabra</span
+            > y <span class="keyword">Conecta 4</span>, junto con la creación de
+            aplicaciones completas, demostraron mi capacidad para llevar las
+            ideas desde la concepción hasta la implementación.
+          </p>
+        </article>
+
+        <article class="work-informations container-column">
+          <span class="work-informations__title">Tecnologías Utilizadas</span>
+          <span class="section-divider"></span>
+          <p
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="top-bottom"
+            class="work-informations__description"
+          >
+            Durante mi tiempo en <span class="keyword"
+              >ISDI Coders Bootcamp</span
+            >, utilicé una variedad de tecnologías para construir proyectos
+            sólidos y escalables. Algunas de las principales tecnologías que
+            utilizamos incluyen el stack <span class="keyword">MERN</span> (<span
+              class="keyword">MongoDB</span
+            >, <span class="keyword">Express.js</span>, <span class="keyword"
+              >React</span
+            > y <span class="keyword">Node.js</span>), así como herramientas
+            como <span class="keyword">Git</span>, <span class="keyword"
+              >GitHub</span
+            >, <span class="keyword">Sass</span>, <span class="keyword"
+              >BEM</span
+            >, <span class="keyword">Netlify</span>, <span class="keyword"
+              >ESLint</span
+            >, <span class="keyword">Redux Toolkit</span>, <span class="keyword"
+              >React Router Dom</span
+            >, <span class="keyword">Jest</span> y <span class="keyword"
+              >Supertest</span
+            >.
+          </p>
+        </article>
+      </section>
+
+      <section class="work-informations container-column">
+        <span class="work-informations__title feedback"
+          >Feedback de los maestros</span
+        >
+        <span class="section-divider"></span>
+
+        <article class="media-container">
+          <ul class="media-container__video-details">
+            {
+              videoDetails.map((videoDetail) => (
+                <li class="video-details__item">
+                  <div class="item__detail">
+                    <span class="detail__name">{videoDetail.name}</span>
+                    <span class="detail__tagline">{videoDetail.tagline}</span>
+                    <a
+                      class="detail__linkedin"
+                      target="_blank"
+                      href={videoDetail.linkedin.href}
+                    >
+                      <Icon icon="linkedin-logo" size="1.6em" />
+                      {videoDetail.linkedin.username}
+                    </a>
+                  </div>
+                  <video
+                    class="item__video"
+                    poster={`/images/edication-training/${videoDetail.image}`}
+                    src={videoDetail.src}
+                    width="385"
+                    height="217"
+                    controls
+                  />
+                </li>
+              ))
+            }
+          </ul>
+        </article>
+      </section>
+    </main>
+    <ContactMe />
+  </div>
+</Layout>

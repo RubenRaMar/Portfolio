@@ -1,5 +1,11 @@
 import type { IconPathsProps } from "../icons/types";
 
+export type PageStructure = {
+  title: string;
+  tagline: string;
+  description: string;
+};
+
 export type PersonalDataStructure = {
   name: string;
   firstSurname: string;
@@ -26,9 +32,7 @@ export type CompetenciesStructure = {
   description?: string;
 };
 
-export type AboutStructure = {
-  title: string;
-  tagline: string;
+export type AboutStructure = PageStructure & {
   aboutMeList: string[];
   backgroundList: string[];
   educationList: string[];
@@ -36,8 +40,22 @@ export type AboutStructure = {
   hardSkills: CompetenciesStructure[];
 };
 
-export type WorkStructure = {
+export type EducationTrainingStructure = PageStructure & {
   title: string;
   description: string;
   tagline: string;
+  videoDetails: VideoDetailsStructure[];
+};
+
+export type VideoDetailsStructure = {
+  name: string;
+  tagline: string;
+  src: string;
+  image: string;
+  linkedin: LinkedinStructure;
+};
+
+export type LinkedinStructure = {
+  href: string;
+  username: string;
 };

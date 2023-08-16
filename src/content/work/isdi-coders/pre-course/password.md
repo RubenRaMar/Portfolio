@@ -74,7 +74,7 @@ tags:
 <article class="work-informations container-column with-background-image">
     <span class="work-informations__title">Key Features</span>
     <span class="section-divider"></span>
-    <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">In this project, you will immerse yourself in the exciting world of <span class="keyword">Dragon Ball</span> while playing the famous "<span class="keyword">Pasapalabra</span>" word game. The <span class="keyword">Dragon Ball</span> theme adds a unique twist to this classic experience.</p>
+    <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">In this project, you will immerse yourself in the exciting world of <span class="keyword">Dragon Ball</span> while playing the famous <span class="keyword">Pasapalabra</span> word game. The <span class="keyword">Dragon Ball</span> theme adds a unique twist to this classic experience.</p>
     <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description"><span class="keyword">Key elements</span> of this project include:</p>
     <ul class="work-informations__list container-column">
         <li class="list__information container-column">
@@ -103,7 +103,7 @@ tags:
 <article class="work-informations container-column">
     <span class="work-informations__title">Technologies Used</span>
     <span class="section-divider"></span>
-    <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">The "<span class="keyword">Dragon Ball Pasapalabra</span>" project was built using modern web technologies. <span class="keyword">HTML</span>, <span class="keyword">CSS</span>, and <span class="keyword">JavaScript</span> were combined to create the interactive gaming experience. <span class="keyword">DOM</span> was used to manipulate the interface and visually present the <span class="keyword">dragon balls</span>, radar, and game elements.</p>
+    <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">The <span class="keyword">Dragon Ball Pasapalabra</span> project was built using modern web technologies. <span class="keyword">HTML</span>, <span class="keyword">CSS</span>, and <span class="keyword">JavaScript</span> were combined to create the interactive gaming experience. <span class="keyword">DOM</span> was used to manipulate the interface and visually present the <span class="keyword">dragon balls</span>, radar, and game elements.</p>
 </article>
 
 <article class="work-informations container-column with-background-image  with-background-image--variant">
@@ -115,5 +115,5 @@ tags:
 <article class="work-informations container-column">
     <span class="work-informations__title">Conclusion</span>
     <span class="section-divider"></span>
-    <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">"<span class="keyword">Dragon Ball Pasapalabra</span>" is an <span class="keyword">exciting project</span> that combines the fun of the classic game with the magic of <span class="keyword">Dragon Ball</span>. By offering an <span class="keyword">interactive</span> and visually appealing <span class="keyword">experience</span>, this project captures fans' imagination and invites them to engage in a <span class="keyword">challenging</span> and themed game.</p>
+    <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description"><span class="keyword">Dragon Ball Pasapalabra</span> is an <span class="keyword">exciting project</span> that combines the fun of the classic game with the magic of <span class="keyword">Dragon Ball</span>. By offering an <span class="keyword">interactive</span> and visually appealing <span class="keyword">experience</span>, this project captures fans' imagination and invites them to engage in a <span class="keyword">challenging</span> and themed game.</p>
 </article>

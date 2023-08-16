@@ -108,7 +108,7 @@ tags:
     </li>
     <li class="list__information container-column">
       <span class="information__title">User-Friendly Notifications</span>
-      <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" class="information__description">Error and success notifications have been implemented to provide clear and user-friendly information when using the platform. This ensures a smooth and confusion-free user experience.</p>
+      <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" class="information__description">Error and success notifications have been implemented to provide clear and <span class="keyword">user-friendly</span> information when using the platform. This ensures a smooth and confusion-free <span class="keyword">user experience</span>.</p>
     </li>
     <li class="list__information container-column">
       <span class="information__title">Our Commitment</span>
