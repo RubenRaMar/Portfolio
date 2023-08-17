@@ -91,8 +91,7 @@ tags:
 
 <article class="work-informations container-column with-background-image">
   <span class="work-informations__title">Key Features</span> 
-  <span
-   data-aos="flip-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="section-divider"></span>
+  <span data-aos="flip-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="section-divider"></span>
   <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description"><span class="keyword">FIGURAniS</span> is built using the SPA (Single Page Application) architecture pattern to provide a seamless and uninterrupted user experience. Additionally, users can enjoy various features that facilitate the management of their <span class="keyword">anime figure</span> collection. Some of the highlighted features include:</p>
   <ul class="work-informations__list container-column">
     <li class="list__information container-column">
@@ -120,28 +119,20 @@ tags:
 
 <article class="work-informations  container-column">
   <span class="work-informations__title">Technologies Used</span>
-  <span
-   data-aos="flip-right"
-            data-aos-delay="300"
-            data-aos-anchor-placement="top-bottom" class="section-divider"></span>
+  <span data-aos="flip-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="section-divider"></span>
   <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description"><span class="keyword">FIGURAniS</span> was built using the <span class="keyword">MERN</span> stack (<span class="keyword">MongoDB</span>, <span class="keyword">Express.js</span>, <span class="keyword">React</span>, and <span class="keyword">Node.js</span>), ensuring an efficient and scalable application. Additionally, for the frontend, <span class="keyword">Redux Toolkit</span> was used to manage the global state of the application, making it easier to handle shared data between components. <span class="keyword">React Router Dom</span> was also used to manage routes and navigation between different pages of the <span class="keyword">SPA</span>.</p>
 </article>
 
 <article class="work-informations container-column with-background-image  with-background-image--variant">
   <span class="work-informations__title">Testing and Deployment</span>
   <span
-   data-aos="flip-right"
-            data-aos-delay="300"
-            data-aos-anchor-placement="top-bottom" class="section-divider"></span>
+    data-aos="flip-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="section-divider"></span>
   <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">Testing plays a crucial role in <span class="keyword">FIGURAniS</span> to ensure software quality. In the frontend, <span class="keyword">Vitest</span> and <span class="keyword">React Testing Library</span> were used to write and execute unit tests for UI, global state, and hooks, ensuring the solid functioning of components and user interface logic. In the backend, <span class="keyword">Jest</span> was used for unit tests, validating server functions and logic. Additionally, <span class="keyword">Supertest</span> was used for integration testing, ensuring that <span class="keyword">API</span> requests and responses behaved as expected.</p>
   <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">To deploy <span class="keyword">FIGURAniS</span>, <span class="keyword">Netlify</span> was used for the frontend and <span class="keyword">Render</span> for the backend, ensuring a smooth and efficient deployment in production.</p>
 </article>
 
 <article class="work-informations container-column with-background-image">
   <span class="work-informations__title">Conclusion</span>
-  <span
-   data-aos="flip-right"
-            data-aos-delay="300"
-            data-aos-anchor-placement="top-bottom" class="section-divider"></span>
+  <span data-aos="flip-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="section-divider"></span>
   <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description"><span class="keyword">FIGURAniS</span> is a comprehensive and well-designed platform that provides a unique and immersive experience for managing <span class="keyword">anime figure</span> collections. With the use of the mentioned frameworks and tools, an efficient, scalable application with a user-friendly interface has been created for all anime enthusiasts. I am excited to share <span class="keyword">FIGURAniS</span> with other anime lovers so they can manage their <span class="keyword">collectible figures</span> and enjoy an unparalleled experience on this platform.</p>
 </article>

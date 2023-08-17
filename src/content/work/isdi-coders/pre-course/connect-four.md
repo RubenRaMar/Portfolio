@@ -65,10 +65,7 @@ tags:
 ---
 
 <article class="work-informations container-column with-background-image">
-    <span class="work-informations__title">Key Features</span>
-    <span data-aos="flip-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="section-divider"></span>
-    <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">
-       This project was developed as part of the <span class="keyword">ISDI Coders pre-course</span>, and although it was optional, I decided to dedicate a <span class="keyword">considerable effort</span> to showcase my <span class="keyword">commitment and skills</span>. The game features vibrant colors and is based on the original <span class="keyword">Connect 4</span> game, with the <span class="keyword">iconic board design</span>.
+    <span class="work-informations__title">Key Features</span> <span data-aos="flip-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="section-divider"></span> <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description"> This project was developed as part of the <span class="keyword">ISDI Coders pre-course</span>, and although it was optional, I decided to dedicate a <span class="keyword">considerable effort</span> to showcase my <span class="keyword">commitment and skills</span>. The game features vibrant colors and is based on the original <span class="keyword">Connect 4</span> game, with the <span class="keyword">iconic board design</span>.
     </p>
     <ul class="work-informations__list container-column">
         <li class="list__information container-column">

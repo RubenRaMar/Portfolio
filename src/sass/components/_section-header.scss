@@ -1,0 +1,27 @@
+@use "../variables/colors";
+@use "../variables/font-size";
+
+.section-header {
+  font-size: font-size.$text-md;
+  color: colors.$gray-300;
+  align-items: center;
+  text-align: center;
+
+  &__title {
+    font-size: font-size.$text-2xl;
+  }
+}
+
+@media (min-width: 800px) {
+  .section-header {
+    max-width: 40ch;
+    font-size: font-size.$text-lg;
+    text-align: left;
+    align-items: start;
+
+    &__title {
+      font-size: font-size.$text-4xl;
+      max-width: 14ch;
+    }
+  }
+}
