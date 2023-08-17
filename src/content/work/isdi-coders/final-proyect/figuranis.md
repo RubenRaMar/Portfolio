@@ -91,27 +91,28 @@ tags:
 
 <article class="work-informations container-column with-background-image">
   <span class="work-informations__title">Key Features</span> 
-  <span class="section-divider"></span>
+  <span
+   data-aos="flip-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="section-divider"></span>
   <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description"><span class="keyword">FIGURAniS</span> is built using the SPA (Single Page Application) architecture pattern to provide a seamless and uninterrupted user experience. Additionally, users can enjoy various features that facilitate the management of their <span class="keyword">anime figure</span> collection. Some of the highlighted features include:</p>
   <ul class="work-informations__list container-column">
     <li class="list__information container-column">
-      <span class="information__title">Secure Authentication</span>
+      <span class="information__title" data-aos="flip-right" data-aos-duration="800" data-aos-anchor-placement="top-bottom">Secure Authentication</span>
       <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" class="information__description">A robust authentication system has been implemented to ensure secure access to the platform. To achieve this, <span class="keyword">JSON Web Tokens (JWT)</span> are used to handle user authentication and passwords are protected using the <span class="keyword">bcrypt.js</span> library, which utilizes the <span class="keyword">bcrypt</span> hashing algorithm to securely store passwords and prevent security vulnerabilities.</p>
     </li>
     <li class="list__information container-column">
-      <span class="information__title">Informative Details</span>
+      <span class="information__title" data-aos="flip-right" data-aos-duration="800" data-aos-anchor-placement="top-bottom">Informative Details</span>
       <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" class="information__description">The page offers an extensive list of <span class="keyword">anime figures</span> with informative details. To achieve this, <span class="keyword">Axios</span> is used to make <span class="keyword">HTTP</span> requests to the backend <span class="keyword">API</span> and fetch the necessary data to display in the interface.</p>
     </li>
     <li class="list__information container-column">
-      <span class="information__title">Intuitive Operations</span>
+      <span class="information__title" data-aos="flip-right" data-aos-duration="800" data-aos-anchor-placement="top-bottom">Intuitive Operations</span>
       <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" class="information__description"><span class="keyword">FIGURAniS</span> allows users to easily add, delete, and modify <span class="keyword">figures</span> in their collection through intuitive forms, significantly improving the management of the <span class="keyword">anime figure</span> collection.</p>
     </li>
     <li class="list__information container-column">
-      <span class="information__title">User-Friendly Notifications</span>
-      <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" class="information__description">Error and success notifications have been implemented to provide clear and user-friendly information when using the platform. This ensures a smooth and confusion-free user experience.</p>
+      <span class="information__title" data-aos="flip-right" data-aos-duration="800" data-aos-anchor-placement="top-bottom">User-Friendly Notifications</span>
+      <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" class="information__description">Error and success notifications have been implemented to provide clear and <span class="keyword">user-friendly</span> information when using the platform. This ensures a smooth and confusion-free <span class="keyword">user experience</span>.</p>
     </li>
     <li class="list__information container-column">
-      <span class="information__title">Our Commitment</span>
+      <span class="information__title" data-aos="flip-right" data-aos-duration="800" data-aos-anchor-placement="top-bottom">Our Commitment</span>
       <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" class="information__description">A continuous effort has been made to provide the best possible experience to users. We strive to maintain a high level of <span class="keyword">Performance</span>, <span class="keyword">Accessibility</span>, <span class="keyword">Best practices</span>, and <span class="keyword">SEO</span>, supported by tools such as <span class="keyword">Lighthouse</span> and <span class="keyword">SonarCloud</span>.</p>
     </li>
   </ul>
@@ -119,19 +120,28 @@ tags:
 
 <article class="work-informations  container-column">
   <span class="work-informations__title">Technologies Used</span>
-  <span class="section-divider"></span>
+  <span
+   data-aos="flip-right"
+            data-aos-delay="300"
+            data-aos-anchor-placement="top-bottom" class="section-divider"></span>
   <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description"><span class="keyword">FIGURAniS</span> was built using the <span class="keyword">MERN</span> stack (<span class="keyword">MongoDB</span>, <span class="keyword">Express.js</span>, <span class="keyword">React</span>, and <span class="keyword">Node.js</span>), ensuring an efficient and scalable application. Additionally, for the frontend, <span class="keyword">Redux Toolkit</span> was used to manage the global state of the application, making it easier to handle shared data between components. <span class="keyword">React Router Dom</span> was also used to manage routes and navigation between different pages of the <span class="keyword">SPA</span>.</p>
 </article>
 
 <article class="work-informations container-column with-background-image  with-background-image--variant">
   <span class="work-informations__title">Testing and Deployment</span>
-  <span class="section-divider"></span>
+  <span
+   data-aos="flip-right"
+            data-aos-delay="300"
+            data-aos-anchor-placement="top-bottom" class="section-divider"></span>
   <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">Testing plays a crucial role in <span class="keyword">FIGURAniS</span> to ensure software quality. In the frontend, <span class="keyword">Vitest</span> and <span class="keyword">React Testing Library</span> were used to write and execute unit tests for UI, global state, and hooks, ensuring the solid functioning of components and user interface logic. In the backend, <span class="keyword">Jest</span> was used for unit tests, validating server functions and logic. Additionally, <span class="keyword">Supertest</span> was used for integration testing, ensuring that <span class="keyword">API</span> requests and responses behaved as expected.</p>
   <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description">To deploy <span class="keyword">FIGURAniS</span>, <span class="keyword">Netlify</span> was used for the frontend and <span class="keyword">Render</span> for the backend, ensuring a smooth and efficient deployment in production.</p>
 </article>
 
 <article class="work-informations container-column with-background-image">
   <span class="work-informations__title">Conclusion</span>
-  <span class="section-divider"></span>
+  <span
+   data-aos="flip-right"
+            data-aos-delay="300"
+            data-aos-anchor-placement="top-bottom" class="section-divider"></span>
   <p data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" class="work-informations__description"><span class="keyword">FIGURAniS</span> is a comprehensive and well-designed platform that provides a unique and immersive experience for managing <span class="keyword">anime figure</span> collections. With the use of the mentioned frameworks and tools, an efficient, scalable application with a user-friendly interface has been created for all anime enthusiasts. I am excited to share <span class="keyword">FIGURAniS</span> with other anime lovers so they can manage their <span class="keyword">collectible figures</span> and enjoy an unparalleled experience on this platform.</p>
 </article>
