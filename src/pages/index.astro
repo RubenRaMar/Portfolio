@@ -10,6 +10,11 @@ import personalData from "@utils/content/personalData/personalData";
 import Roles from "@components/Roles/Roles.astro";
 import Skills from "@components/Skills/Skills.astro";
 import WorksPreview from "@components/WorkPreview/WorkPreview.astro";
+import IsdiCoders from "@components/IsdiCoders/IsdiCoders.astro";
+import isdiCoders from "@utils/content/isdiCoders/isdiCoders";
+import SectionHeader from "@components/SectionHeader/SectionHeader.astro";
+
+const { teachersFeedback, figuranisPresentation } = isdiCoders;
 
 const { name, firstSurname, tagline, profileImage, altProfileImage } =
   personalData;
@@ -43,28 +48,25 @@ const works = (await getCollection("work"))
           /></a
         >
       </header>
+
       <Skills />
     </section>
 
-    <section class="works-container wrapper container-column gap-20 lg:gap-48">
+    <section class="works-container wrapper container-column gap-20 lg:gap-30">
+      <span
+        data-aos="flip-right"
+        data-aos-delay="300"
+        data-aos-anchor-placement="top-bottom"
+        class="section-divider"></span>
+
       <article
         class="works-container__works works-container__works--with-call-to-action with-background-image"
       >
         <section class="works__header container-column gap-2 lg:gap-4">
-          <h3
-            data-aos="zoom-in-down"
-            data-aos-anchor-placement="top-bottom"
-            class="header__title"
-          >
-            Selected Work
-          </h3>
-          <p
-            data-aos="zoom-in-up"
-            data-aos-anchor-placement="top-bottom"
-            class="header__description"
-          >
-            Take a look at some of my featured work.
-          </p>
+          <SectionHeader
+            title="Selected Work"
+            description="Take a look at some of my featured work."
+          />
         </section>
 
         <section class="gallery-container">
@@ -88,6 +90,33 @@ const works = (await getCollection("work"))
           />
         </section>
       </article>
+
+      <span
+        data-aos="flip-right"
+        data-aos-delay="300"
+        data-aos-anchor-placement="top-bottom"
+        class="section-divider"></span>
+    </section>
+    <section
+      class="education-training__isdi-coders-videos wrapper container-column gap-20 lg:gap-20"
+    >
+      <IsdiCoders
+        isdiCoders={teachersFeedback}
+        title="Teacher Feedback"
+        description="Feedback from the teachers during the presentation of the final project at the ISDI Coders Bootcamp."
+      />
+
+      <span
+        data-aos="flip-right"
+        data-aos-delay="300"
+        data-aos-anchor-placement="top-bottom"
+        class="section-divider"></span>
+
+      <IsdiCoders
+        isdiCoders={figuranisPresentation}
+        title="FIGURAniS App Presentation"
+        description="Presentation of my application FIGURAniS at the ISDI Coders Bootcamp."
+      />
     </section>
 
     <ContactMe />

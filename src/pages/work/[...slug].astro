@@ -1,10 +1,17 @@
 ---
 import CallToAction from "@components/CallToAction/CallToAction.astro";
 import ContactMe from "@components/ContactMe/ContactMe.astro";
+import Grid from "@components/Grid/Grid.astro";
 import PageHeader from "@components/PageHeader/PageHeader.astro";
 import Roles from "@components/Roles/Roles.astro";
+import WorksPreview from "@components/WorkPreview/WorkPreview.astro";
+import SectionHeader from "@components/SectionHeader/SectionHeader.astro";
 import Layout from "@layouts/Layout.astro";
 import { CollectionEntry, getCollection } from "astro:content";
+
+const works = (await getCollection("work"))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 4);
 
 interface Props {
   entry: CollectionEntry<"work">;
@@ -79,6 +86,47 @@ const { Content } = await render();
         <section class="work-data container-column gap-10 content">
           <article class="work-data__content container-column">
             <Content />
+          </article>
+        </section>
+        <section
+          class="works-container wrapper container-column gap-20 lg:gap-30"
+        >
+          <span
+            data-aos="flip-right"
+            data-aos-delay="300"
+            data-aos-anchor-placement="top-bottom"
+            class="section-divider"></span>
+
+          <article
+            class="works-container__works works-container__works--with-call-to-action with-background-image"
+          >
+            <section class="works__header container-column gap-2 lg:gap-4">
+              <SectionHeader
+                title="Selected Work"
+                description="Take a look at some of my featured work."
+              />
+            </section>
+
+            <section class="gallery-container">
+              <Grid variant="offset">
+                {
+                  works.map((work) => (
+                    <li>
+                      <WorksPreview works={work} />
+                    </li>
+                  ))
+                }
+              </Grid>
+            </section>
+
+            <section class="call-to-action-container">
+              <CallToAction
+                text="View All"
+                icon="cards"
+                size="1.4em"
+                href="/work/"
+              />
+            </section>
           </article>
         </section>
       </section>
