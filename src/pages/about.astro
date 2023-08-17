@@ -6,6 +6,10 @@ import Layout from "@layouts/Layout.astro";
 import PageHeader from "@components/PageHeader/PageHeader.astro";
 import personalData from "@utils/content/personalData/personalData";
 import Roles from "@components/Roles/Roles.astro";
+import isdiCoders from "@utils/content/isdiCoders/isdiCoders";
+import IsdiCoders from "@components/IsdiCoders/IsdiCoders.astro";
+
+const { teachersFeedback, figuranisPresentation } = isdiCoders;
 
 const { name, firstSurname } = personalData;
 
@@ -37,7 +41,11 @@ const {
         />
       </PageHeader>
 
-      <span class="section-divider"></span>
+      <span
+        data-aos="flip-right"
+        data-aos-delay="300"
+        data-aos-anchor-placement="top-bottom"
+        class="section-divider"></span>
 
       <section class="about-me">
         <h2 class="about-me__title">About me</h2>
@@ -53,7 +61,11 @@ const {
             ))
           }
         </article>
-        <span class="section-divider"></span>
+        <span
+          data-aos="flip-right"
+          data-aos-delay="300"
+          data-aos-anchor-placement="top-bottom"
+          class="section-divider"></span>
       </section>
 
       <section class="background">
@@ -73,7 +85,11 @@ const {
             ))
           }
         </article>
-        <span class="section-divider"></span>
+        <span
+          data-aos="flip-right"
+          data-aos-delay="300"
+          data-aos-anchor-placement="top-bottom"
+          class="section-divider"></span>
       </section>
 
       <section class="education">
@@ -88,7 +104,11 @@ const {
             ))
           }
         </article>
-        <span class="section-divider"></span>
+        <span
+          data-aos="flip-right"
+          data-aos-delay="300"
+          data-aos-anchor-placement="top-bottom"
+          class="section-divider"></span>
       </section>
 
       <section class="soft-skills">
@@ -97,7 +117,11 @@ const {
         <article class="soft-skills__content">
           <Roles roles={softSkills} />
         </article>
-        <span class="section-divider"></span>
+        <span
+          data-aos="flip-right"
+          data-aos-delay="300"
+          data-aos-anchor-placement="top-bottom"
+          class="section-divider"></span>
       </section>
 
       <section class="hard-skills">
@@ -108,7 +132,27 @@ const {
         </article>
       </section>
     </main>
+    <section
+      class="isdi-coders-videos wrapper container-column gap-20 lg:gap-20"
+    >
+      <span
+        data-aos="flip-right"
+        data-aos-delay="300"
+        data-aos-anchor-placement="top-bottom"
+        class="section-divider"></span>
+      <IsdiCoders
+        isdiCoders={teachersFeedback}
+        title="Teacher Feedback"
+        description="Feedback from the teachers during the presentation of the final project at the ISDI Coders Bootcamp."
+      />
+
+      <IsdiCoders
+        isdiCoders={figuranisPresentation}
+        title="FIGURAniS App Presentation"
+        description="Presentation of my application FIGURAniS at the ISDI Coders Bootcamp."
+      />
+    </section>
 
     <ContactMe />
   </div>
-</Layout>
+</Layout>@utils/content/isdiCoders/educationTrainig
