@@ -13,7 +13,7 @@ const { href, icon, size, text } = Astro.props;
 ---
 
 <div data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
-  <a class="call-to-action" target="_blank" href={href}>
+  <a class="call-to-action" href={href}>
     {icon && <Icon icon={icon} size={size} />}
     {text}
   </a>
