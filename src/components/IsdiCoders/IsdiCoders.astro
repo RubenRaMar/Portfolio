@@ -1,0 +1,53 @@
+---
+import Icon from "@components/Icon/Icon.astro";
+import SectionHeader from "@components/SectionHeader/SectionHeader.astro";
+import type { VideoDetailsStructure } from "@utils/content/types";
+
+type Props = {
+  isdiCoders: VideoDetailsStructure[];
+  title: string;
+  description: string;
+};
+
+const { isdiCoders, title, description } = Astro.props;
+---
+
+<article class="feedback-container container-column gap-15">
+  <SectionHeader title={title} description={description} />
+
+  <ul class="feedback-container__video-details container-column gap-10">
+    {
+      isdiCoders.map((videoDetail) => (
+        <li class="video-details__item">
+          <section
+            data-aos="flip-right"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="900"
+            class="item__detail container-column"
+          >
+            <span class="detail__name">{videoDetail.name}</span>
+            <article class="detail__bottom container-column gap-2">
+              <span class="bottom__tagline">{videoDetail.tagline}</span>
+              <a class="bottom__linkedin" href={videoDetail.linkedin.href}>
+                <Icon icon="linkedin-logo" size="1.6em" />
+                {videoDetail.linkedin.username}
+              </a>
+            </article>
+          </section>
+          <iframe
+            class="item__video"
+            data-aos="flip-left"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="900"
+            width="385"
+            height="217"
+            src={videoDetail.src}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          />
+        </li>
+      ))
+    }
+  </ul>
+</article>
