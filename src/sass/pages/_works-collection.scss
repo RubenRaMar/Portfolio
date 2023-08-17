@@ -122,6 +122,13 @@ html:not(.theme-dark) .keyword {
     padding-bottom: 2.5rem;
     padding-inline: 40px;
   }
+
+  .page-header {
+    &__tagline {
+      max-width: 800px;
+      text-align: left;
+    }
+  }
 }
 
 .work-data {
