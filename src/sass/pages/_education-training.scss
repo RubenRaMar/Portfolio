@@ -1,0 +1,44 @@
+@use "../variables/colors";
+@use "../variables/animations";
+@use "../variables/typography";
+
+.work-link {
+  color: colors.$accent-dark;
+  text-decoration: 1px solid underline currentColor;
+  text-underline-offset: 4px;
+  transition: all animations.$theme-transition;
+}
+
+.work-link:hover {
+  color: colors.$accent-regular;
+  text-decoration-color: colors.$accent-regular;
+}
+
+.education-trainig {
+  &__isdi-coders {
+    .section-header {
+      color: colors.$gray-300;
+
+      &__title {
+        min-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .education-trainig {
+    &__isdi-coders {
+      .section-header {
+        min-width: 100%;
+        color: colors.$gray-300;
+        background: #aa00ff24;
+        text-align: center;
+        align-items: center;
+        padding: 15px;
+        line-height: 50px;
+        border-radius: 25px 25px 0 0;
+      }
+    }
+  }
+}
