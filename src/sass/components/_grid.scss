@@ -21,10 +21,6 @@
     gap: 60px;
   }
 
-  .grid--offset {
-    padding-bottom: $row-offset;
-  }
-
   .grid--offset > :nth-child(odd) {
     transform: translateY($row-offset);
   }
