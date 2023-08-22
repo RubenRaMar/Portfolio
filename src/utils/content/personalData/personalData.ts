@@ -5,7 +5,7 @@ export const personalData: PersonalDataStructure = {
   firstSurname: "Ramírez",
   secondSurname: "Martínez",
   tagline:
-    "I am a Creative Developer who is currently based in Barcelona, Spain.",
+    "I am a creative developer who is currently based in Barcelona, Spain.",
   profileImage: "/images/profileImage.webp",
   altProfileImage: () =>
     `${personalData.name} ${personalData.firstSurname} smiling and wearing a brown sweater`,
