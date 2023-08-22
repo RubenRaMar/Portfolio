@@ -9,7 +9,6 @@
     background: gradients.$gradient-subtle;
     overflow: hidden;
     border: 2px solid colors.$gray-800;
-    border-radius: 9px;
   }
 }
 
@@ -56,19 +55,19 @@
 
 @media (min-width: 800px) {
   .feedback-container {
-    &__video-details > :nth-child(odd) {
+    &__video-details > :nth-child(even) {
       flex-direction: row-reverse;
       margin-left: auto;
     }
 
     &__video-details > :nth-child(odd) .item {
       &__video {
-        border-right: 2px solid colors.$gray-800;
+        border-left: 2px solid colors.$gray-800;
       }
     }
     &__video-details > :nth-child(even) .item {
       &__video {
-        border-left: 2px solid colors.$gray-800;
+        border-right: 2px solid colors.$gray-800;
       }
     }
   }

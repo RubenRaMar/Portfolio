@@ -108,6 +108,8 @@ html:not(.theme-dark) .keyword {
     font-size: 1.1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     background: colors.$accent-subtle-overlay;
     padding: 14px;
   }
