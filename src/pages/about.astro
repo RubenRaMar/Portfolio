@@ -13,15 +13,8 @@ const { teachersFeedback, figuranisPresentation } = isdiCoders;
 
 const { name, firstSurname } = personalData;
 
-const {
-  title,
-  tagline,
-  aboutMeList,
-  backgroundList,
-  educationList,
-  softSkills,
-  hardSkills,
-} = about;
+const { title, tagline, aboutMe, educationList, softSkills, hardSkills } =
+  about;
 ---
 
 <Layout
@@ -50,40 +43,9 @@ const {
       <section class="about-me">
         <h2 class="about-me__title">About me</h2>
         <article class="about-me__content with-background-image">
-          {
-            aboutMeList.map((aboutMe, position) => (
-              <>
-                <p data-aos-anchor-placement="top-bottom" data-aos="zoom-in-up">
-                  <Fragment set:html={aboutMe} />
-                </p>
-                {position !== aboutMeList.length - 1 && <br />}
-              </>
-            ))
-          }
-        </article>
-        <span
-          data-aos="flip-right"
-          data-aos-delay="300"
-          data-aos-anchor-placement="top-bottom"
-          class="section-divider"></span>
-      </section>
-
-      <section class="background">
-        <h2 class="background__title">Background</h2>
-
-        <article
-          class="background__content with-background-image with-background-image--variant"
-        >
-          {
-            backgroundList.map((background, position) => (
-              <>
-                <p data-aos-anchor-placement="top-bottom" data-aos="zoom-in-up">
-                  <Fragment set:html={background} />
-                </p>
-                {position !== backgroundList.length - 1 && <br />}
-              </>
-            ))
-          }
+          <p data-aos-anchor-placement="top-bottom" data-aos="zoom-in-up">
+            <Fragment set:html={aboutMe} />
+          </p>
         </article>
         <span
           data-aos="flip-right"
