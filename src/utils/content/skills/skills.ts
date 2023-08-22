@@ -5,7 +5,7 @@ const skills: CompetenciesStructure[] = [
     competency: "Full Stack",
     icon: "stack",
     description:
-      "I have experience in both client-side and server-side development, allowing me to create comprehensive and versatile web applications.",
+      "I have experience in both Frontend and Backend development, allowing me to create comprehensive and versatile web applications.",
   },
   {
     competency: "Quick Learner",
@@ -17,7 +17,7 @@ const skills: CompetenciesStructure[] = [
     competency: "Detail-oriented",
     icon: "magnifying-glass",
     description:
-      "I have a strong attention to detail and take pride in my precision at work, enabling me to deliver high-quality and error-free projects.",
+      "I have a strong attention to detail and take pride in my precision at work, enabling me to deliver high-quality projects.",
   },
 ];
 

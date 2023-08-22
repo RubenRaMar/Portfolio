@@ -33,8 +33,7 @@ export type CompetenciesStructure = {
 };
 
 export type AboutStructure = PageStructure & {
-  aboutMeList: string[];
-  backgroundList: string[];
+  aboutMe: string;
   educationList: string[];
   softSkills: CompetenciesStructure[];
   hardSkills: CompetenciesStructure[];
